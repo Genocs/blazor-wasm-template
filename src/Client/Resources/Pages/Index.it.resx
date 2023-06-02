@@ -120,8 +120,8 @@
   <data name="Blazor WASM Boilerplate" xml:space="preserve">
     <value>Blazor WASM Boilerplate</value>
   </data>
-  <data name="Built with the goodness of" xml:space="preserve">
-    <value>Sviluppato con l'ultilizzo di componenti della libreria </value>
+  <data name="Built with" xml:space="preserve">
+    <value>Sviluppato con l'utilizzo di componenti della libreria </value>
   </data>
   <data name="Compatible with" xml:space="preserve">
     <value>Compatibile con </value>
