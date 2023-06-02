@@ -1,0 +1,43 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Extensions.DependencyInjection
+@using Microsoft.Extensions.Localization
+@using Microsoft.JSInterop
+@using Genocs.Template.Client
+@using Genocs.Template.Client.Shared
+@using Genocs.Template.Client.Pages.Authentication
+@using Genocs.Template.Client.Pages.Multitenancy
+@using Genocs.Template.Client.Components.Common
+@using Genocs.Template.Client.Components.EntityTable
+@using Genocs.Template.Client.Components.Localization
+@using Genocs.Template.Client.Components.Notifications
+@using Genocs.Template.Client.Components.ThemeManager
+@using Genocs.Template.Client.Infrastructure.ApiClient
+@using Genocs.Template.Client.Infrastructure.Auth
+@using Genocs.Template.Client.Infrastructure.Common
+@using Genocs.Template.Client.Infrastructure.Notifications
+@using Genocs.Template.Client.Infrastructure.Preferences
+@using Genocs.WebApi.Shared.Authorization
+
+@using Blazored.LocalStorage
+@using Mapster
+@using MediatR.Courier
+@using MudBlazor
+
+@attribute [Authorize]
+
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+@inject IConfiguration Config
+@inject IClientPreferenceManager ClientPreferences

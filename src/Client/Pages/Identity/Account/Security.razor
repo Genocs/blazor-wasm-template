@@ -1,0 +1,42 @@
+﻿@inject IStringLocalizer<Security> L
+
+<EditForm Model="@_passwordModel" OnValidSubmit="ChangePasswordAsync">
+    <MudCard Elevation="25">
+        <MudCardHeader>
+            <CardHeaderContent>
+                <MudText>@L["Change Password"]</MudText>
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudGrid>
+                <DataAnnotationsValidator />
+                <CustomValidation @ref="_customValidation" />
+                <MudItem xs="12" md="6">
+                    <MudTextField T="string" @bind-Value="_passwordModel.NewPassword"
+                                  For="@(() => _passwordModel.NewPassword)" Label="@L["Password"]" Variant="Variant.Outlined"
+                                  InputType="_newPasswordInput" Adornment="Adornment.End" AdornmentIcon="@_newPasswordInputIcon"
+                                  OnAdornmentClick="@(() => TogglePasswordVisibility(true))" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField T="string" @bind-Value="_passwordModel.ConfirmNewPassword"
+                                  For="@(() => _passwordModel.ConfirmNewPassword)" Label="@L["Password Confirmation"]"
+                                  Variant="Variant.Outlined" InputType="_newPasswordInput" Adornment="Adornment.End"
+                                  AdornmentIcon="@_newPasswordInputIcon"
+                                  OnAdornmentClick="@(() => TogglePasswordVisibility(true))" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField T="string" @bind-Value="_passwordModel.Password"
+                                  For="@(() => _passwordModel.Password)" Label="@L["Current Password"]" Variant="Variant.Outlined"
+                                  InputType="_currentPasswordInput" Adornment="Adornment.End"
+                                  AdornmentIcon="@_currentPasswordInputIcon"
+                                  OnAdornmentClick="@(() => TogglePasswordVisibility(false))" />
+                </MudItem>
+            </MudGrid>
+        </MudCardContent>
+        <MudCardActions Class="pb-4 pl-4">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit" StartIcon="@Icons.Filled.Save" Class="ml-auto">
+                @L["Change Password"]
+            </MudButton>
+        </MudCardActions>
+    </MudCard>
+</EditForm>

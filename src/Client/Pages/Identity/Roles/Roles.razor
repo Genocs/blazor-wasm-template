@@ -1,0 +1,33 @@
+﻿@page "/roles"
+@attribute [MustHavePermission(GNXAction.View, GNXResource.Roles)]
+
+@inject IStringLocalizer<Roles> L
+
+<GnxTitle Title="@L["Roles"]" Description="@L["Manage Roles."]" />
+
+<EntityTable TEntity="RoleDto" TId="string" TRequest="CreateOrUpdateRoleRequest" Context="@Context">
+
+    <ExtraActions>
+        @if (_canViewRoleClaims)
+        {
+            <MudMenuItem @onclick="@(() => ManagePermissions(context.Id))">@L["Manage Permission"]</MudMenuItem>
+        }
+    </ExtraActions>
+
+    <EditFormContent>
+        @if (!Context.AddEditModal.IsCreate)
+        {
+            <MudItem xs="12" md="6">
+                <MudTextField Value="context.Id" ReadOnly DisableUnderLine Label="@L[$"Role Id"]" />
+            </MudItem>
+        }
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => context.Name)" @bind-Value="context.Name" Label="@L["Role Name"]" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => context.Description)" @bind-Value="context.Description"
+                Label="@L["Description"]" />
+        </MudItem>
+    </EditFormContent>
+
+</EntityTable>

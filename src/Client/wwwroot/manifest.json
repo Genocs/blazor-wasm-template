@@ -1,0 +1,21 @@
+{
+  "name": "Genocs.Template",
+  "short_name": "Genocs.Template",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3eaf7c",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "splash.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "splash.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

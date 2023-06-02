@@ -1,0 +1,95 @@
+﻿@page "/home"
+@page "/"
+
+@inject IStringLocalizer<Index> L
+
+<MudContainer>
+    <MudGrid>
+        <MudItem xs="12" sm="12" md="12">
+            <div class="d-flex justify-center mt-4">
+                <img src="splash.png" Style="height:250px" />
+            </div>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+            <MudText Align="Align.Center" Typo="Typo.h5" Class="smaller">@L["Genocs"]</MudText>
+         <MudText Align="Align.Center" Typo="Typo.h4">@L["Web Application"]</MudText>
+
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+            <MudText Align="Align.Center">
+                @L["Built with the goodness of"] <MudLink Href="https://www.mudblazor.com" Target="_blank">MudBlazor</MudLink> @L["Component Library"].
+            </MudText>
+            <MudText Align="Align.Center">
+                @L["Compatible with"] <MudLink Href="https://github.com/Genocs/genocs-library-docs" Target="_blank">Genocs .NET WebAPI Boilerplate v1.</MudLink>
+            </MudText>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+           <div class="mud-typography-align-center">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Link="https://genocs-blog.netlify.app/basics/getting-started/" Target="_blank" StartIcon="@Icons.Material.Filled.Rocket">@L["Get Started"]</MudButton>
+                <MudButton Variant="Variant.Outlined" Style="margin-left:5px" Color="Color.Default" Link="https://github.com/Genocs/genocs-library" Target="_blank" StartIcon="@Icons.Custom.Brands.GitHub">@L["Star on GitHub"]</MudButton>
+            </div>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+             <MudText Align="Align.Center">@L["Version 1.0"]</MudText>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+            <MudExpansionPanels>
+                <MudExpansionPanel Class="mud-elevation-25" Text="@L["Getting Started"]" MaxHeight="150">
+                    @L["In case you are stuck anywhere or have any queries regarding this implementation, I have compiled a Quick Start Guide for you reference."]
+                    <MudButton Variant="Variant.Text" DisableElevation="true" Color="Color.Secondary" Link="https://genocs-blog.netlify.app/general/getting-started" Target="_blank">@L["Read The Guide"]</MudButton>
+                </MudExpansionPanel>
+                <MudExpansionPanel Class="mud-elevation-25" Text="@L["Important Links"]" MaxHeight="500">
+                    <MudList Clickable="true">
+                        <MudListItem Text="@L["Github Repository : Do Not Forget to Leave a Star ;)"]" Href="https://github.com/Genocs/genocs-library" />
+                        <MudListItem Text="@L["Quick Start Guide"]" Href="https://genocs-blog.netlify.app/blazor-template/general/getting-started" />
+                    </MudList>
+                </MudExpansionPanel>
+                <MudExpansionPanel Class="mud-elevation-25" Text="@L["Learning Resources"]" MaxHeight="1000">
+                    @L["Here are few articles that should help you get started with Blazor."]
+                    <MudList Clickable="true">
+                        <MudListItem Text="@L["Blazor For Beginners – Getting Started With Blazor"]" Href="https://genocs-blog.netlify.app/blog/getting-started-with-blazor/" />
+                        <MudListItem Text="@L["Exploring Blazor Project Structure"]" Href="https://genocs-blog.netlify.app/blog/exploring-blazor-project-structure/" />
+                        <MudListItem Text="@L["Onion Architecture In ASP.NET Core With CQRS – Detailed"]" Href="https://genocs-blog.netlify.app/blog/onion-architecture-in-aspnet-core/" />
+                        <MudListItem Text="@L["How To Implement Blazor CRUD Using Entity Framework Core?"]" Href="https://genocs-blog.netlify.app/blog/blazor-crud-with-entity-framework-core/" />
+                        <MudListItem Text="@L["Custom Authentication In Blazor WebAssembly – Detailed"]" Href="https://genocs-blog.netlify.app/blog/authentication-in-blazor-webassembly/" />
+                        <MudListItem Text="@L["Implementing Blazor CRUD Using Mudblazor Component Library In .NET 5"]" Href="https://genocs-blog.netlify.app/blog/blazor-crud-using-mudblazor/" />
+                        <MudListItem Text="@L["Building A Chat Application With Blazor, Identity, And SignalR"]" Href="https://genocs-blog.netlify.app/blog/realtime-chat-application-with-blazor/" />
+                    </MudList>
+                </MudExpansionPanel>
+                 <MudExpansionPanel Class="mud-elevation-25" Text="@L["User Claims"]">
+                    @L["Application Claims of the currently logged in user."]
+                     <MudList Dense="true">
+                @if (Claims is not null)
+                {
+                    @foreach (var claim in Claims)
+                    {
+                        <MudListItem>
+                            <MudChip>
+                                @claim.Type
+                            </MudChip>
+                            @claim.Value
+                        </MudListItem>
+                    }
+                }
+            </MudList>
+                </MudExpansionPanel>
+            </MudExpansionPanels>
+        </MudItem>
+        <MudItem  xs="12" sm="12" md="12">
+            <MudAlert Style="margin-top:10px;justify-content:center" Severity="Severity.Info"><MudLink Href="https://github.com/Genocs/genocs-library">@L["Liked this Template? Star us on GitHub!"]</MudLink></MudAlert>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = default!;
+
+    public IEnumerable<Claim>? Claims { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthState;
+        Claims = authState.User.Claims;
+    }
+}
