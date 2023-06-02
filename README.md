@@ -1,5 +1,5 @@
 [![GitHub](https://img.shields.io/github/license/Genocs/blazor-template?color=2da44e&style=flat-square)](https://github.com/Genocs/blazor-template/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/878181478972928011?color=%237289da&label=Discord&logo=discord&logoColor=%237289da&style=flat-square)](https://discord.com/invite/fWwArnkV))
+[![Discord](https://img.shields.io/discord/1106846706512953385?color=%237289da&label=Discord&logo=discord&logoColor=%237289da&style=flat-square)](https://discord.com/invite/fWwArnkV)
 [![Twitter](https://img.shields.io/twitter/follow/genocs?color=1DA1F2&label=Twitter&logo=Twitter&style=flat-square)](https://twitter.com/genocs)
 [![.NET build and test](https://github.com/Genocs/blazor-template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Genocs/blazor-template/actions/workflows/dotnet.yml)
 
