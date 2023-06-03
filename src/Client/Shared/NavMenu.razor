@@ -1,12 +1,11 @@
 ﻿@inject IStringLocalizer<NavMenu> L
 
-<PersonCard
-    Style="background-color: var(--mud-palette-drawer-background);color: var(--mud-palette-drawer-text); margin-bottom:0px!important" />
+<PersonCard Style="background-color: var(--mud-palette-drawer-background);color: var(--mud-palette-drawer-text); margin-bottom:0px!important" />
 <MudNavMenu>
     <MudText Typo="Typo.subtitle2" Color="Color.Primary" Class="ml-4 my-3">@L["Start"]</MudText>
     <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">@L["Home"]</MudNavLink>
-    <MudNavLink Href="https://genocs-blog.netlify.app/basics/getting-started/" Match="NavLinkMatch.All" Target="_blank"
-        Icon="@Icons.Material.Filled.RocketLaunch">@L["Getting Started"]</MudNavLink>
+    <MudNavLink Href="https://genocs-blog.netlify.app/blazor-template/general/getting-started/" Match="NavLinkMatch.All" Target="_blank"
+                Icon="@Icons.Material.Filled.RocketLaunch">@L["Getting Started"]</MudNavLink>
     @if (_canViewHangfire)
     {
         <MudNavLink Href="@_hangfireUrl" Match="NavLinkMatch.All" Target="_blank" Icon="@Icons.Material.Filled.Work">@L["Hangfire"]</MudNavLink>
@@ -22,7 +21,7 @@
     {
         <MudText Typo="Typo.subtitle2" Color="Color.Primary" Class="ml-4 my-3">@L["Management"]</MudText>
         <MudNavGroup Title="@L["Catalog"]" Expanded Icon="@Icons.Filled.AddBox">
-            @if (_canViewProducts)
+             @if (_canViewProducts)
             {
                 <MudNavLink Href="/catalog/products" Icon="@Icons.Filled.ShoppingBag" Class="gnx-nav-child">
                     @L["Products"]
@@ -36,6 +35,7 @@
             }
         </MudNavGroup>
     }
+
     @if (CanViewAdministrationGroup)
     {
         <MudText Typo="Typo.subtitle2" Color="Color.Primary" Class="ml-4 my-3">@L["Administration"]</MudText>
@@ -47,9 +47,10 @@
         {
             <MudNavLink Href="/roles" Icon="@Icons.Material.Filled.EmojiPeople">@L["Roles"]</MudNavLink>
         }
-        @if(_canViewTenants)
+        @if (_canViewTenants)
         {
             <MudNavLink Href="/tenants" Icon="@Icons.Filled.GroupWork" Disabled="!_canViewTenants">@L["Tenants"]</MudNavLink>
         }
     }
+
 </MudNavMenu>

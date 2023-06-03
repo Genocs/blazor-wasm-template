@@ -25,7 +25,7 @@ public partial class BaseLayout
             config.ActionColor = Color.Primary;
             config.Onclick = snackbar =>
             {
-                Navigation.NavigateTo("https://github.com/Genocs/genocs-library-docs");
+                Navigation.NavigateTo("https://github.com/Genocs/blazor-template");
                 return Task.CompletedTask;
             };
         });

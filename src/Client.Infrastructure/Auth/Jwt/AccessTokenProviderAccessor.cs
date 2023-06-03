@@ -9,9 +9,9 @@ internal class AccessTokenProviderAccessor : IAccessTokenProviderAccessor
     private readonly IServiceProvider _provider;
     private IAccessTokenProvider? _tokenProvider;
 
-    public AccessTokenProviderAccessor(IServiceProvider provider) =>
-        _provider = provider;
+    public AccessTokenProviderAccessor(IServiceProvider provider)
+        => _provider = provider;
 
-    public IAccessTokenProvider TokenProvider =>
-        _tokenProvider ??= _provider.GetRequiredService<IAccessTokenProvider>();
+    public IAccessTokenProvider TokenProvider
+        => _tokenProvider ??= _provider.GetRequiredService<IAccessTokenProvider>();
 }

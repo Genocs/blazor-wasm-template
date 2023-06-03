@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "Genocs.Template.Server": {
+    "Genocs.BlazorTemplate": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -9,8 +9,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <AdditionalFiles Remove="C:\dev\public\blazor-wasm-boilerplate\.editorconfig" />
-      <AdditionalFiles Remove="C:\dev\public\blazor-wasm-boilerplate\stylecop.json" />
+        <AdditionalFiles Remove="C:\dev\public\blazor-wasm-boilerplate\.editorconfig" />
+        <AdditionalFiles Remove="C:\dev\public\blazor-wasm-boilerplate\stylecop.json" />
     </ItemGroup>
 
     <ItemGroup>
@@ -37,8 +37,5 @@
              the user gets redirected to authentication/login-failed with no error message. -->
         <TrimmerRootAssembly Include="Microsoft.Authentication.WebAssembly.Msal" />
     </ItemGroup>
-
-    <ItemGroup>
-      <EditorConfigFiles Remove="C:\dev\public\blazor-wasm-boilerplate\.editorconfig" />
-    </ItemGroup>
+    
 </Project>
