@@ -13,6 +13,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddClientServices(builder.Configuration);
 
+//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
 var host = builder.Build();
 
 var storageService = host.Services.GetRequiredService<IClientPreferenceManager>();
