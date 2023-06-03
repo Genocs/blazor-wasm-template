@@ -1,6 +1,7 @@
-[![GitHub](https://img.shields.io/github/license/fullstackhero/blazor-wasm-boilerplate?color=2da44e&style=flat-square)](https://github.com/fullstackhero/blazor-wasm-boilerplate/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/878181478972928011?color=%237289da&label=Discord&logo=discord&logoColor=%237289da&style=flat-square)](https://discord.gg/yQWpShsKrf)
-[![Twitter](https://img.shields.io/twitter/follow/codewithmukesh?color=1DA1F2&label=Twitter&logo=Twitter&style=flat-square)](https://twitter.com/codewithmukesh)
+[![GitHub](https://img.shields.io/github/license/Genocs/blazor-template?color=2da44e&style=flat-square)](https://github.com/Genocs/blazor-template/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/1106846706512953385?color=%237289da&label=Discord&logo=discord&logoColor=%237289da&style=flat-square)](https://discord.com/invite/fWwArnkV)
+[![Twitter](https://img.shields.io/twitter/follow/genocs?color=1DA1F2&label=Twitter&logo=Twitter&style=flat-square)](https://twitter.com/genocs)
+[![.NET build and test](https://github.com/Genocs/blazor-template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Genocs/blazor-template/actions/workflows/dotnet.yml)
 
 <p align="center">
     <img src="icon.png" alt="icon">
@@ -48,13 +49,13 @@ Get the .NET WebApi Boilerplate by running the following command
 dotnet new --install FullStackHero.WebAPI.Boilerplate::0.0.6-rc
 ```
 
-For more details on getting started, [read this article](https://fullstackhero.net/blazor-webassembly-boilerplate/general/getting-started/)
+For more details on getting started, [read this article](https://genocs-blog.netlify.app/blazor-template/general/overview//)
 
 ## Community
 
-- Discord [@fullstackhero](https://discord.gg/gdgHRt4mMw)
-- Facebook Page [@codewithmukesh](https://facebook.com/codewithmukesh)
-- Youtube Channel [@codewithmukesh](https://youtube.com/c/codewithmukesh)
+- Discord [@genocs](https://discord.com/invite/fWwArnkV))
+- Facebook Page [@cgenocs](https://facebook.com/Genocs)
+- Youtube Channel [@genocs](https://youtube.com/c/genocs)
 
 ## Contributors
 
