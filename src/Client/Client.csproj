@@ -5,6 +5,7 @@
         <RootNamespace>Genocs.Template.Client</RootNamespace>
         <AssemblyName>Genocs.Template.Client</AssemblyName>
         <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+        <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
     </PropertyGroup>
 
     <ItemGroup>
