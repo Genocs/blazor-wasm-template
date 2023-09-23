@@ -127,7 +127,7 @@
     <value>Marche</value>
   </data>
   <data name="Brands exported" xml:space="preserve">
-    <value>Brands exported</value>
+    <value>Marche esportate</value>
   </data>
   <data name="Create" xml:space="preserve">
     <value>Crea</value>
@@ -148,7 +148,7 @@
     <value>Export</value>
   </data>
   <data name="Filtered Brands exported" xml:space="preserve">
-    <value>Filtered Brands exported</value>
+    <value>Marche (filtrate) esportate</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
@@ -157,7 +157,7 @@
     <value>Import</value>
   </data>
   <data name="Manage Brands." xml:space="preserve">
-    <value>Gestione marca.</value>
+    <value>Gestione marca</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nome</value>

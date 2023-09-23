@@ -133,7 +133,7 @@
     <value>Elimina</value>
   </data>
   <data name="Delete Content" xml:space="preserve">
-    <value>Delete Content</value>
+    <value>Cancella contenuto</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Descrizione</value>
@@ -142,7 +142,7 @@
     <value>Archivio documenti</value>
   </data>
   <data name="Document Type" xml:space="preserve">
-    <value>Document Type</value>
+    <value>Tipo di documento</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Download</value>
@@ -157,10 +157,10 @@
     <value>E' Pubblico</value>
   </data>
   <data name="Manage Extended Attributes" xml:space="preserve">
-    <value>Manage Extended Attributes</value>
+    <value>Gestione attributi estesi</value>
   </data>
   <data name="No Allowed Actions" xml:space="preserve">
-    <value>No Allowed Actions</value>
+    <value>Azione non consentita</value>
   </data>
   <data name="Owner" xml:space="preserve">
     <value>Proprietario</value>
@@ -175,6 +175,6 @@
     <value>Titolo</value>
   </data>
   <data name="you" xml:space="preserve">
-    <value>you</value>
+    <value>tu</value>
   </data>
 </root>

@@ -136,12 +136,12 @@
     <value>Logged Out.</value>
   </data>
   <data name="New Message From {0}" xml:space="preserve">
-    <value>New Message From {0}</value>
+    <value>Nuovo messaggio da {0}</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Invia</value>
   </data>
   <data name="Want to understand how Chat is implemented in BlazorHero ? Refer this" xml:space="preserve">
-    <value>Vuoi capire come viene implementata la chat in BlazorHero? Guarda qui</value>
+    <value>Vuoi capire come viene implementata la chat? Guarda qui</value>
   </data>
 </root>

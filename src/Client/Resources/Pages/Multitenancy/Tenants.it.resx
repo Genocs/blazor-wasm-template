@@ -121,12 +121,12 @@
     <value>Attivo</value>
   </data>
   <data name="Admin Email" xml:space="preserve">
-    <value>Email (Adm)</value>
+    <value>Email (Admin)</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nome</value>
   </data>
   <data name="Valid Upto" xml:space="preserve">
-    <value>Valito fino a</value>
+    <value>Valido fino a</value>
   </data>
 </root>

@@ -127,7 +127,7 @@
     <value>Marche</value>
   </data>
   <data name="Charts comming soon ish..." xml:space="preserve">
-    <value>Grafici... coming soon...</value>
+    <value>Grafici... a breve...</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Dashboard</value>
@@ -145,7 +145,7 @@
     <value>Tipi di documenti</value>
   </data>
   <data name="Document Extended Attributes" xml:space="preserve">
-    <value>Document Extended Attributes</value>
+    <value>Documenti - Attributi estesi</value>
   </data>
   <data name="Realtime Updates &amp; Insights with SignalR." xml:space="preserve">
     <value>Aggiornamenti in tempo reale e approfondimenti con SignalR</value>

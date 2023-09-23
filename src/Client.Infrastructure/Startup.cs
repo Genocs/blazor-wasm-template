@@ -14,7 +14,7 @@ namespace Genocs.Template.Client.Infrastructure;
 
 public static class Startup
 {
-    private const string ClientName = "FullStackHero.API";
+    private const string ClientName = "Microservice.API";
 
     public static IServiceCollection AddClientServices(this IServiceCollection services, IConfiguration config) =>
         services
@@ -25,8 +25,8 @@ public static class Startup
                     configuration.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.BottomRight;
                     configuration.SnackbarConfiguration.HideTransitionDuration = 100;
                     configuration.SnackbarConfiguration.ShowTransitionDuration = 100;
-                    configuration.SnackbarConfiguration.VisibleStateDuration = 5000;
-                    configuration.SnackbarConfiguration.ShowCloseIcon = false;
+                    configuration.SnackbarConfiguration.VisibleStateDuration = 100;
+                    configuration.SnackbarConfiguration.ShowCloseIcon = true;
                 })
             .AddScoped<IClientPreferenceManager, ClientPreferenceManager>()
             .AutoRegisterInterfaces<IAppService>()

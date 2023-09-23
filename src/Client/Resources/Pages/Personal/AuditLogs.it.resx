@@ -130,13 +130,13 @@
     <value>Data</value>
   </data>
   <data name="Details for Trail ID" xml:space="preserve">
-    <value>Dettagli per ID Attività</value>
+    <value>Dettagli per ID attività</value>
   </data>
   <data name="Export To Excel" xml:space="preserve">
     <value>Esporta in Excel</value>
   </data>
   <data name="Filtered Audit Trails exported" xml:space="preserve">
-    <value>Filtered Audit Trails exported</value>
+    <value>Attività (filtrate) esportate</value>
   </data>
   <data name="Hide" xml:space="preserve">
     <value>Nascondi</value>
@@ -154,19 +154,19 @@
     <value>Vecchi valori</value>
   </data>
   <data name="Primary Key" xml:space="preserve">
-    <value>Chiave Primaria</value>
+    <value>Chiave primaria</value>
   </data>
   <data name="Search for Trails" xml:space="preserve">
-    <value>Cerca Attività</value>
+    <value>Cerca attività</value>
   </data>
   <data name="Show" xml:space="preserve">
     <value>Mostra</value>
   </data>
   <data name="Table Name" xml:space="preserve">
-    <value>Nome Tabella</value>
+    <value>Nome tabella</value>
   </data>
   <data name="Trail Details" xml:space="preserve">
-    <value>Dettagli Attività</value>
+    <value>Dettagli attività</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tipo</value>
@@ -175,6 +175,6 @@
     <value>UTC</value>
   </data>
   <data name="Your Recent Activities." xml:space="preserve">
-    <value>Le tue Attività Recenti.</value>
+    <value>Le tue attività recenti</value>
   </data>
 </root>

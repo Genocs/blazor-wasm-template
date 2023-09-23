@@ -139,13 +139,13 @@
     <value>Dashboard</value>
   </data>
   <data name="Document Management" xml:space="preserve">
-    <value>Document Management</value>
+    <value>Gestione documenti</value>
   </data>
   <data name="Document Store" xml:space="preserve">
     <value>Archivio documenti</value>
   </data>
   <data name="Document Types" xml:space="preserve">
-    <value>Document Types</value>
+    <value>Tipi di documenti</value>
   </data>
   <data name="FAQs" xml:space="preserve">
     <value>FAQs</value>
@@ -157,7 +157,7 @@
     <value>Home</value>
   </data>
   <data name="Logs" xml:space="preserve">
-    <value>Registro Attività</value>
+    <value>Registro attività</value>
   </data>
   <data name="Mail" xml:space="preserve">
     <value>Mail</value>
