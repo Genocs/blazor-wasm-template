@@ -23,17 +23,17 @@ public static class ClaimsPrincipalExtensions
         => principal.FindFirstValue(ClaimTypes.MobilePhone);
 
     public static string? GetUserId(this ClaimsPrincipal principal)
-       => principal.FindFirstValue(ClaimTypes.NameIdentifier);
+        => principal.FindFirstValue(ClaimTypes.NameIdentifier);
 
     public static string? GetImageUrl(this ClaimsPrincipal principal)
-       => principal.FindFirstValue(GNXClaims.ImageUrl);
+        => principal.FindFirstValue(GNXClaims.ImageUrl);
 
-    public static DateTimeOffset GetExpiration(this ClaimsPrincipal principal) =>
-        DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(
+    public static DateTimeOffset GetExpiration(this ClaimsPrincipal principal)
+        => DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(
             principal.FindFirstValue(GNXClaims.Expiration)));
 
-    private static string? FindFirstValue(this ClaimsPrincipal principal, string claimType) =>
-        principal is null
+    private static string? FindFirstValue(this ClaimsPrincipal principal, string claimType)
+        => principal is null
             ? throw new ArgumentNullException(nameof(principal))
             : principal.FindFirst(claimType)?.Value;
 }
