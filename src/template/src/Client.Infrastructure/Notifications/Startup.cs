@@ -14,7 +14,7 @@ internal static class Startup
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
         services
-            .AddMediatR(assemblies)
+            .AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()))
             .AddCourier(assemblies)
             .AddTransient<INotificationPublisher, NotificationPublisher>();
 

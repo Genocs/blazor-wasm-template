@@ -46,14 +46,6 @@ public static class Startup
                 .Services
             .AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient(ClientName));
 
-    private static void RegisterPermissionClaims(AuthorizationOptions options)
-    {
-        foreach (var permission in GNXPermissions.All)
-        {
-            options.AddPolicy(permission.Name, policy => policy.RequireClaim(GNXClaims.Permission, permission.Name));
-        }
-    }
-
     public static IServiceCollection AutoRegisterInterfaces<T>(this IServiceCollection services)
     {
         var @interface = typeof(T);
@@ -78,5 +70,13 @@ public static class Startup
         }
 
         return services;
+    }
+
+    private static void RegisterPermissionClaims(AuthorizationOptions options)
+    {
+        foreach (var permission in GNXPermissions.All)
+        {
+            options.AddPolicy(permission.Name, policy => policy.RequireClaim(GNXClaims.Permission, permission.Name));
+        }
     }
 }

@@ -47,25 +47,25 @@
             <MudItem>
                 <div>
                     <MudButton HtmlTag="label" DisableElevation Variant="Variant.Filled" Color="Color.Primary" Size="Size.Small"
-                                StartIcon="@Icons.Filled.CloudUpload" for="fileInput">
+                                StartIcon="@Icons.Material.Filled.CloudUpload" for="fileInput">
                          @L["Upload"]
                      </MudButton>
                      @if (!Context.AddEditModal.IsCreate && !string.IsNullOrEmpty(context.ImagePath) && string.IsNullOrEmpty(context.ImageInBytes))
                     {
                         <MudButton HtmlTag="label" DisableElevation Variant="Variant.Filled" Color="Color.Info" Size="Size.Small" Target="_blank"
-                                    StartIcon="@Icons.Filled.RemoveRedEye" Link="@(Config[ConfigNames.ApiBaseUrl] + @context.ImagePath)" Style="margin-left: 5px;">
+                                    StartIcon="@Icons.Material.Filled.RemoveRedEye" Link="@(Config[ConfigNames.ApiBaseUrl] + @context.ImagePath)" Style="margin-left: 5px;">
                              @L["View"]
                          </MudButton>
 
                         <MudButton HtmlTag="label" DisableElevation Variant="Variant.Filled" Color="Color.Error" Size="Size.Small"
-                                    StartIcon="@Icons.Filled.Delete" OnClick="SetDeleteCurrentImageFlag" Style="margin-left: 5px;">
+                                    StartIcon="@Icons.Material.Filled.Delete" OnClick="SetDeleteCurrentImageFlag" Style="margin-left: 5px;">
                              @L["Delete"]
                          </MudButton>
                     }
                     @if (!string.IsNullOrEmpty(context.ImageInBytes))
                     {
                         <MudButton HtmlTag="label" DisableElevation OnClick="ClearImageInBytes" Variant="Variant.Filled" Color="Color.Warning" Size="Size.Small" Target="_blank"
-                                    StartIcon="@Icons.Filled.Clear" Style="margin-left: 5px;">
+                                    StartIcon="@Icons.Material.Filled.Clear" Style="margin-left: 5px;">
                              @L["Clear"]
                          </MudButton>
                     }

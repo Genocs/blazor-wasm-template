@@ -30,18 +30,18 @@
         </DialogContent>
 
         <DialogActions>
-            <MudButton DisableElevation Variant="Variant.Filled" StartIcon="@Icons.Filled.Cancel" OnClick="MudDialog.Cancel">
+            <MudButton DisableElevation Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Cancel" OnClick="MudDialog.Cancel">
                 @L["Cancel"]
             </MudButton>
             @if (IsCreate)
             {
-                <MudButton DisableElevation Variant="Variant.Filled" StartIcon="@Icons.Filled.Save" ButtonType="ButtonType.Submit" Color="Color.Success">
+                <MudButton DisableElevation Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" ButtonType="ButtonType.Submit" Color="Color.Success">
                     @L["Save"]
                 </MudButton>
             }
             else
             {
-                <MudButton DisableElevation Variant="Variant.Filled" StartIcon="@Icons.Filled.Update" ButtonType="ButtonType.Submit" Color="Color.Secondary">
+                <MudButton DisableElevation Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Update" ButtonType="ButtonType.Submit" Color="Color.Secondary">
                     @L["Update"]
                 </MudButton>
             }
