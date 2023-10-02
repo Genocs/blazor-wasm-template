@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./src/template
 
     - name: Build
       run: dotnet build ./src/template --no-restore
