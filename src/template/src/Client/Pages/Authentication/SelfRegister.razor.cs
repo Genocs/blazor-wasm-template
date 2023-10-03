@@ -26,14 +26,14 @@ public partial class SelfRegister
     {
         BusySubmitting = true;
 
-        string? sucessMessage = await ApiHelper.ExecuteCallGuardedAsync(
+        string? successMessage = await ApiHelper.ExecuteCallGuardedAsync(
             () => UsersClient.SelfRegisterAsync(Tenant, _createUserRequest),
             Snackbar,
             _customValidation);
 
-        if (sucessMessage != null)
+        if (successMessage != null)
         {
-            Snackbar.Add(sucessMessage, Severity.Info);
+            Snackbar.Add(successMessage, Severity.Info);
             Navigation.NavigateTo("/login");
         }
 

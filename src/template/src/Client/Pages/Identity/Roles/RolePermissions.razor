@@ -21,7 +21,7 @@ else
                 <MudTable Hover="true" Elevation="25" Items="@allRoleClaimsInGroup" Style="margin-bottom:0px!important" Filter="new Func<PermissionViewModel, bool>(Search)">
                     <ToolBarContent>
                         <div class="justify-center mud-text-align-center">
-                            <MudButton Variant="Variant.Filled" Color="Color.Info" Class="ml-auto" StartIcon="@Icons.Material.Filled.ArrowBack" Link="/roles">
+                            <MudButton Variant="Variant.Filled" Color="Color.Info" Class="ml-auto" StartIcon="@Icons.Material.Filled.ArrowBack" Href="/roles">
                                 @L["Back"]
                             </MudButton>
                             @if (_canEditRoleClaims)

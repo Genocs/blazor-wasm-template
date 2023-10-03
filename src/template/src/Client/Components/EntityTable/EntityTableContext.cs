@@ -72,7 +72,7 @@ public abstract class EntityTableContext<TEntity, TId, TRequest>
     /// <summary>
     /// The GNXAction name of the search permission. This is GNXAction.Search by default.
     /// When empty, no search functionality will be available.
-    /// When the string is "true", search funtionality will be enabled,
+    /// When the string is "true", search functionality will be enabled,
     /// otherwise it will only be enabled if the user has permission for this action on the EntityResource.
     /// </summary>
     public string SearchAction { get; }
@@ -80,7 +80,7 @@ public abstract class EntityTableContext<TEntity, TId, TRequest>
     /// <summary>
     /// The permission name of the create permission. This is GNXAction.Create by default.
     /// When empty, no create functionality will be available.
-    /// When the string "true", create funtionality will be enabled,
+    /// When the string "true", create functionality will be enabled,
     /// otherwise it will only be enabled if the user has permission for this action on the EntityResource.
     /// </summary>
     public string CreateAction { get; }
@@ -88,7 +88,7 @@ public abstract class EntityTableContext<TEntity, TId, TRequest>
     /// <summary>
     /// The permission name of the update permission. This is GNXAction.Update by default.
     /// When empty, no update functionality will be available.
-    /// When the string is "true", update funtionality will be enabled,
+    /// When the string is "true", update functionality will be enabled,
     /// otherwise it will only be enabled if the user has permission for this action on the EntityResource.
     /// </summary>
     public string UpdateAction { get; }
@@ -96,7 +96,7 @@ public abstract class EntityTableContext<TEntity, TId, TRequest>
     /// <summary>
     /// The permission name of the delete permission. This is GNXAction.Delete by default.
     /// When empty, no delete functionality will be available.
-    /// When the string is "true", delete funtionality will be enabled,
+    /// When the string is "true", delete functionality will be enabled,
     /// otherwise it will only be enabled if the user has permission for this action on the EntityResource.
     /// </summary>
     public string DeleteAction { get; }

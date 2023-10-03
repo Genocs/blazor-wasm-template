@@ -14,13 +14,13 @@ else
     <MudTable Hover="true" Elevation="25" Items="_userRolesList" Filter="new Func<UserRoleDto, bool>(Search)">
         <ToolBarContent>
             <div class="justify-center mud-text-align-center">
-                <MudButton Variant="Variant.Filled" Color="Color.Info" Class="ml-auto" StartIcon="@Icons.Material.Filled.ArrowBack" Link="/users">
+                <MudButton Variant="Variant.Filled" Color="Color.Info" Class="ml-auto" StartIcon="@Icons.Material.Filled.ArrowBack" Href="/users">
                     @L["Back"]
                 </MudButton>
                 @if (_canEditUsers)
                 {
                     <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="SaveAsync" StartIcon="@Icons.Material.Filled.Save"
-                        ButtonType="ButtonType.Submit" Style="margin-left: 5px!important;">
+                               ButtonType="ButtonType.Submit" Style="margin-left: 5px!important;">
                         @L["Update"]
                     </MudButton>
                 }
@@ -29,22 +29,25 @@ else
             @if (_canSearchRoles)
             {
                 <MudTextField @bind-Value="_searchString" Immediate="true" FullWidth=false
-                    Placeholder="@L["Search For User Roles"]" Adornment="Adornment.End"
-                    AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0 mb-3">
+                              Placeholder="@L["Search For User Roles"]" Adornment="Adornment.End"
+                              AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0 mb-3">
                 </MudTextField>
             }
         </ToolBarContent>
         <HeaderContent>
             <MudTh>
-                <MudTableSortLabel SortBy="new Func<UserRoleDto, object?>(x => x.RoleName)">@L["Role Name"]
+                <MudTableSortLabel SortBy="new Func<UserRoleDto, object?>(x => x.RoleName)">
+                    @L["Role Name"]
                 </MudTableSortLabel>
             </MudTh>
             <MudTh>
-                <MudTableSortLabel SortBy="new Func<UserRoleDto, object?>(x => x.Description)">@L["Description"]
+                <MudTableSortLabel SortBy="new Func<UserRoleDto, object?>(x => x.Description)">
+                    @L["Description"]
                 </MudTableSortLabel>
             </MudTh>
             <MudTh>
-                <MudTableSortLabel SortBy="new Func<UserRoleDto, object>(x => x.Enabled)">@L["Status"]
+                <MudTableSortLabel SortBy="new Func<UserRoleDto, object>(x => x.Enabled)">
+                    @L["Status"]
                 </MudTableSortLabel>
             </MudTh>
         </HeaderContent>

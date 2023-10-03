@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor;
-using Shared.Authorization;
 
 namespace Genocs.Template.Client.Pages.Identity.Users;
 
@@ -25,7 +24,9 @@ public partial class Users
     private bool _canExportUsers;
     private bool _canViewRoles;
 
-    // Fields for editform
+    /// <summary>
+    /// Fields for edit form.
+    /// </summary>
     protected string Password { get; set; } = string.Empty;
     protected string ConfirmPassword { get; set; } = string.Empty;
 

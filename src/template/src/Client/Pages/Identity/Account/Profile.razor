@@ -7,7 +7,7 @@
                 <div class="d-flex justify-center mb-4">
                     @if (!string.IsNullOrEmpty(_imageUrl))
                     {
-                        <MudAvatar Square="true" Image="@_imageUrl" Style=" width:100%;height:auto;"> </MudAvatar>
+                        <MudAvatar Square="true" MudImage="@_imageUrl" Style=" width:100%;height:auto;"> </MudAvatar>
                     }
                     else
                     {
@@ -27,7 +27,7 @@
                     @if (!string.IsNullOrEmpty(_imageUrl))
                     {
                         <MudButton HtmlTag="label" DisableElevation Variant="Variant.Filled" Color="Color.Info" Size="Size.Small" Target="_blank"
-                                    StartIcon="@Icons.Material.Filled.RemoveRedEye" Link="@_imageUrl" Style="margin-left: 5px;">
+                                    StartIcon="@Icons.Material.Filled.RemoveRedEye" Href="@_imageUrl" Style="margin-left: 5px;">
                              @L["View"]
                          </MudButton>
 

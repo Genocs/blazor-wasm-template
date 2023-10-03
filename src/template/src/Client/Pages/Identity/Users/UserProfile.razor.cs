@@ -6,7 +6,6 @@ using Genocs.WebApi.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using Shared.Authorization;
 
 namespace Genocs.Template.Client.Pages.Identity.Users;
 

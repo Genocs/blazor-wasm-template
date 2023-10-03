@@ -27,14 +27,15 @@ else
                             <MudGrid>
                                 <MudSwitch @bind-Checked="@_active" Color="Color.Primary" Label="@_localizer["Active?"]"></MudSwitch>
                                 <MudCheckBox ReadOnly @bind-Checked="@_emailConfirmed" Disabled Label="@_localizer["Email Confirmed?"]" Color="Color.Secondary">
-                                    </MudCheckBox>
-                                <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto"
-                            OnClick="ToggleUserStatus" ButtonType="ButtonType.Submit">@_localizer["Save Changes"]
-                                </MudButton>
-                            </MudGrid>
-                        </MudCardContent>
-                    </MudCard>
-                </MudItem>
+                                 </MudCheckBox>
+                                 <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto"
+                                            OnClick="ToggleUserStatus" ButtonType="ButtonType.Submit">
+                                     @_localizer["Save Changes"]
+                                 </MudButton>
+                             </MudGrid>
+                         </MudCardContent>
+                     </MudCard>
+                 </MudItem>
             }
         </AuthorizeView>
         <MudItem xs="12" sm="4" md="4">
@@ -43,11 +44,12 @@ else
                     <div class="d-flex justify-center mb-4">
                         @if (!string.IsNullOrEmpty(_imageUrl))
                         {
-                            <MudAvatar Square="true" Image="@_imageUrl" Style=" width:100%;height:auto;"> </MudAvatar>
+                            <MudAvatar Square="true" MudImage="@_imageUrl" Style=" width:100%;height:auto;"> </MudAvatar>
                         }
                         else
                         {
-                            <MudAvatar Square="true" Color="Color.Primary" Style="width:100%;height:300px;">@_firstLetterOfName
+                            <MudAvatar Square="true" Color="Color.Primary" Style="width:100%;height:300px;">
+                                @_firstLetterOfName
                             </MudAvatar>
                         }
                     </div>
@@ -59,10 +61,10 @@ else
                         @if (!string.IsNullOrEmpty(_imageUrl))
                         {
                             <MudButton HtmlTag="label" DisableElevation Variant="Variant.Filled" Color="Color.Info"
-                                        Size="Size.Small" Target="_blank" StartIcon="@Icons.Material.Filled.RemoveRedEye" Link="@_imageUrl"
-                        Style="margin-left: 5px;">
-                                @_localizer["View"]
-                            </MudButton>
+                                        Size="Size.Small" Target="_blank" StartIcon="@Icons.Material.Filled.RemoveRedEye" Href="@_imageUrl"
+                                        Style="margin-left: 5px;">
+                                 @_localizer["View"]
+                             </MudButton>
                         }
                     </div>
 
@@ -85,7 +87,8 @@ else
                             <MudField Label="@_localizer["Last Name"]" Variant="Variant.Outlined">@_lastName</MudField>
                         </MudItem>
                         <MudItem xs="12" md="6">
-                            <MudField Label="@_localizer["Phone Number"]" Variant="Variant.Outlined">@_phoneNumber
+                            <MudField Label="@_localizer["Phone Number"]" Variant="Variant.Outlined">
+                                @_phoneNumber
                             </MudField>
                         </MudItem>
                         <MudItem xs="12" md="6">
@@ -100,7 +103,7 @@ else
 
 @code
 {
-public class CustomStringToBoolConverter : BoolConverter<string>
+    public class CustomStringToBoolConverter : BoolConverter<string>
     {
 
         public CustomStringToBoolConverter()

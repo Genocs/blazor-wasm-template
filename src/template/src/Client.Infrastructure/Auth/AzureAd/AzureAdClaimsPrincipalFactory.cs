@@ -48,9 +48,9 @@ internal class AzureAdClaimsPrincipalFactory : AccountClaimsPrincipalFactory<Rem
                 userIdentity.AddClaim(new Claim(ClaimTypes.Surname, userDetails.LastName));
             }
 
-            if (!userIdentity.HasClaim(c => c.Type == GNXClaims.Fullname))
+            if (!userIdentity.HasClaim(c => c.Type == GNXClaims.FullName))
             {
-                userIdentity.AddClaim(new Claim(GNXClaims.Fullname, $"{userDetails.FirstName} {userDetails.LastName}"));
+                userIdentity.AddClaim(new Claim(GNXClaims.FullName, $"{userDetails.FirstName} {userDetails.LastName}"));
             }
 
             if (!userIdentity.HasClaim(c => c.Type == ClaimTypes.NameIdentifier))
