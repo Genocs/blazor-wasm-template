@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using MediatR.Courier;
-using MediatR.Courier.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Shared.Notifications;
 

@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-	<metadata>
-		<id>Genocs.Blazor.Template</id>
-		<version>1.0.0</version>
-		<title>Genocs - Blazor WebAssembly Template</title>
-		<authors>Nocco Giovanni Emanuele</authors>
-		<owners>[Genocs] Nocco Giovanni Emanuele</owners>
-		<projectUrl>https://genocs-blog.netlify.app/blazor-template/general/overview</projectUrl>
-		<repository type="git" url="https://github.com/Genocs/blazor-template.git"/>
-		<license type="expression">MIT</license>
-		<icon>.\content\icon.png</icon>
-		<readme>.\content\README.md</readme>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<copyright>2023</copyright>
-		<description>
-			Clean Architecture Template for .NET 7.0 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.
-		</description>
-		<language>en-US</language>
-		<packageTypes>
-			<packageType name="Template" />
-		</packageTypes>
-		<tags>cleanarchitecture clean architecture blazor genocs solution csharp wasm webassembly mudblazor</tags>
-	</metadata>
-
-	<files>
-		<file src="..\README.md" target="content" />
-		<file src="..\icon.png" target="content" />
-		<file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.git\**;**\.github\**;**\*.user;**\.vs\**;**\Images\**;**\Logs\**;**\.terraform\**;**\.terraform.lock.hcl;**\terraform.tfstate;**\.nupkg;**\nupkg;;**\assets\**" />
-	</files>
+  <metadata minClientVersion="5.10.0">
+    <id>Genocs.Blazor.Template</id>
+    <version>1.0.0</version>
+    <title>Genocs - Blazor WebAssembly Template</title>
+    <authors>Nocco Giovanni Emanuele</authors>
+    <owners>[Genocs] Nocco Giovanni Emanuele</owners>
+    <projectUrl>https://genocs-blog.netlify.app/blazor-template/general/overview</projectUrl>
+    <repository type="git" url="https://github.com/Genocs/blazor-template.git"/>
+    <license type="expression">MIT</license>
+    <icon>.\content\icon.png</icon>
+    <readme>.\content\README.md</readme>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>2023</copyright>
+    <description>Clean Architecture Template for .NET 7.0 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.</description>
+    <language>en-US</language>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>cleanarchitecture clean architecture blazor genocs solution csharp wasm webassembly mudblazor</tags>
+  </metadata>
+  <files>
+    <file src="..\README.md" target="content" />
+    <file src="..\icon.png" target="content" />
+    <file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.git\**;**\.github\**;**\*.user;**\.vs\**;**\Images\**;**\Logs\**;**\.terraform\**;**\.terraform.lock.hcl;**\terraform.tfstate;**\.nupkg;**\nupkg;;**\assets\**" />
+  </files>
 </package>
