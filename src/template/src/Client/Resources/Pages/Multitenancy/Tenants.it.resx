@@ -117,14 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Activate Tenant" xml:space="preserve">
+    <value>Attiva tenant</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Attivo</value>
   </data>
   <data name="Admin Email" xml:space="preserve">
     <value>Email (Admin)</value>
   </data>
+  <data name="Deactivate Tenant" xml:space="preserve">
+    <value>Disattiva tenant</value>
+  </data>
+  <data name="Details for Tenant" xml:space="preserve">
+    <value>Details for Tenant</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Nascondi</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Nome</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Visualizza</value>
+  </data>
+  <data name="Tenant Details" xml:space="preserve">
+    <value>dettagli tenants</value>
+  </data>
+  <data name="Upgrade Subscription" xml:space="preserve">
+    <value>Aggiorna sottoscrizione</value>
   </data>
   <data name="Valid Upto" xml:space="preserve">
     <value>Valido fino a</value>
