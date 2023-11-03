@@ -136,10 +136,10 @@
     <value>Conferma E-Mail </value>
   </data>
   <data name="Export" xml:space="preserve">
-    <value>Export</value>
+    <value>Esporta</value>
   </data>
   <data name="Filtered Users exported" xml:space="preserve">
-    <value>Filtered Users exported</value>
+    <value>Utenti Filtrati esportati</value>
   </data>
   <data name="First Name" xml:space="preserve">
     <value>Nome</value>
@@ -187,7 +187,7 @@
     <value>Utenti</value>
   </data>
   <data name="Users exported" xml:space="preserve">
-    <value>Users exported</value>
+    <value>Utenti esportati</value>
   </data>
   <data name="View Profile" xml:space="preserve">
     <value>Vedi profilo</value>

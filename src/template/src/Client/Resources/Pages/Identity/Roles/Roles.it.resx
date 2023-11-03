@@ -130,7 +130,7 @@
     <value>Vuoi eliminare il ruolo con Id {0}?</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>Descrizione</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Modifica</value>
@@ -145,7 +145,7 @@
     <value>Gestisci ruoli.</value>
   </data>
   <data name="No Allowed Actions" xml:space="preserve">
-    <value>No Allowed Actions</value>
+    <value>Azioni non permesse</value>
   </data>
   <data name="Reload" xml:space="preserve">
     <value>Ricarica</value>

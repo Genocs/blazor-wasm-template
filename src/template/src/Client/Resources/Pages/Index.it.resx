@@ -129,6 +129,9 @@
   <data name="Component Library" xml:space="preserve">
     <value>Libreria componenti</value>
   </data>
+  <data name="Getting Started" xml:space="preserve">
+    <value>Iniziamo</value>
+  </data>
   <data name="In case you are stuck anywhere or have any queries regarding this implementation, I have compiled a Quick Start Guide for you reference." xml:space="preserve">
     <value>Nel caso in cui tu sia bloccato o hai domande riguardanti questa implementazione, ho compilato una guida rapida per il tuo riferimento.</value>
   </data>

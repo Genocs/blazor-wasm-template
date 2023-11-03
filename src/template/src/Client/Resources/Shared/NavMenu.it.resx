@@ -120,6 +120,9 @@
   <data name="Account" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Amministrazione</value>
+  </data>
   <data name="Administrator" xml:space="preserve">
     <value>Amministratore</value>
   </data>
@@ -153,6 +156,9 @@
   <data name="Features" xml:space="preserve">
     <value>Caratteristiche</value>
   </data>
+  <data name="Getting Started" xml:space="preserve">
+    <value>Iniziamo</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -161,6 +167,9 @@
   </data>
   <data name="Mail" xml:space="preserve">
     <value>Mail</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Gestione</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personale</value>
