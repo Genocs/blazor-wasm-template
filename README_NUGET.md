@@ -133,18 +133,11 @@ Here are a few ways by which you can support.
 
 [![buy-me-a-coffee](https://raw.githubusercontent.com/Genocs/blazor-wasm-template/main/assets/buy-me-a-coffee.png "buy me a coffee")](https://www.buymeacoffee.com/genocs)
 
-## Code Contributors
-
-This project exists thanks to all the people who contribute. [Submit your PR and join the team!](CONTRIBUTING.md)
-
-[![genocs contributors](https://contrib.rocks/image?repo=Genocs/blazor-wasm-template "genocs contributors")](https://github.com/genocs/blazor-wasm-template/graphs/contributors)
-
 ## Financial Contributors
 
 Become a financial contributor and help me sustain the project.
 
 **Support the Project** on [Opencollective](https://opencollective.com/genocs)
-
 
 ## Acknowledgements
 
