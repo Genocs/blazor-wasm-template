@@ -5,26 +5,29 @@
     "Blazor",
     "WASM",
     "WebAssembly",
-    "Clean Architecture",
-    "Boilerplate",
     "Web"
   ],
   "tags": {
     "language": "C#",
     "type": "project"
   },
-  "identity": "Genocs.BlazorTemplate",
-  "name": "Genocs - Blazor WebAssembly Template",
-  "description": "Clean Architecture Template for .NET 6.0 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.",
-  "shortName": "gnx-blazor",
-  "sourceName": "Genocs.BlazorTemplate",
+  "identity": "Genocs.BlazorWasm.Template",
+  "name": "Genocs: Blazor WebAssembly Template",
+  "description": "Clean Architecture Template for .NET7 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.",
+  "groupIdentity": "Genocs.Microservice.Template",
+  "shortName": "gnx-wasmblazor",
+  "sourceName": "Genocs.BlazorWasm.Template", // Will replace the string 'Genocs.BlazorWasm.Template' with the value provided via -n.
   "preferNameDirectory": true,
   "sources": [
     {
       "source": "./",
       "target": "./",
       "exclude": [
-        ".template.config/**"
+        ".template.config/**",
+        ".idea/**",
+        ".vs/**",
+        ".github/**",
+        "media/**"
       ]
     }
   ],
