@@ -1,6 +1,6 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
 
-namespace Genocs.Template.Client.Components.EntityTable;
+namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 
 /// <summary>
 /// Initialization Context for the EntityTable Component.

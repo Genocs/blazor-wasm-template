@@ -1,17 +1,17 @@
-using Genocs.Template.Client.Components.EntityTable;
-using Genocs.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
 using Mapster;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Pages.Personal;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Personal;
 
 public partial class AuditLogs
 {
     [Inject]
     private IPersonalClient PersonalClient { get; set; } = default!;
 
-    protected EntityClientTableContext<RelatedAuditTrail, Guid, object> Context { get; set; } = default!;
+    protected EntityClientTableContext<RelatedAuditTrail, DefaultIdType, object> Context { get; set; } = default!;
 
     private string? _searchString;
     private MudDateRangePicker _dateRangePicker = default!;
@@ -42,18 +42,18 @@ public partial class AuditLogs
             searchFunc: (searchString, trail) =>
                 (string.IsNullOrWhiteSpace(searchString) // check Search String
                     || trail.TableName?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true
-                    || (_searchInOldValues &&
-                        trail.OldValues?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true)
-                    || (_searchInNewValues &&
-                        trail.NewValues?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true))
-                && ((_dateRange?.Start is null && _dateRange?.End is null) // check Date Range
-                    || (_dateRange?.Start is not null && _dateRange.End is null && trail.DateTime >= _dateRange.Start)
-                    || (_dateRange?.Start is null && _dateRange?.End is not null && trail.DateTime <= _dateRange.End + new TimeSpan(0, 11, 59, 59, 999))
-                    || (trail.DateTime >= _dateRange!.Start && trail.DateTime <= _dateRange.End + new TimeSpan(0, 11, 59, 59, 999))),
+                    || _searchInOldValues &&
+                        trail.OldValues?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true
+                    || _searchInNewValues &&
+                        trail.NewValues?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true)
+                && (_dateRange?.Start is null && _dateRange?.End is null // check Date Range
+                    || _dateRange?.Start is not null && _dateRange.End is null && trail.DateTime >= _dateRange.Start
+                    || _dateRange?.Start is null && _dateRange?.End is not null && trail.DateTime <= _dateRange.End + new TimeSpan(0, 11, 59, 59, 999)
+                    || trail.DateTime >= _dateRange!.Start && trail.DateTime <= _dateRange.End + new TimeSpan(0, 11, 59, 59, 999)),
             hasExtraActionsFunc: () => true);
     }
 
-    private void ShowBtnPress(Guid id)
+    private void ShowBtnPress(DefaultIdType id)
     {
         var trail = _trails.First(f => f.Id == id);
         trail.ShowDetails = !trail.ShowDetails;

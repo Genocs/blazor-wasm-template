@@ -1,10 +1,10 @@
-﻿using Genocs.Template.Client.Infrastructure.Notifications;
-using Genocs.Template.Client.Infrastructure.Preferences;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 using MediatR.Courier;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Components.Common;
+namespace Genocs.BlazorWasm.Template.Client.Components.Common;
 
 public class GnxTable<T> : MudTable<T>
 {

@@ -1,8 +1,8 @@
-﻿using Genocs.Template.Client.Infrastructure.Auth;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Components.Common;
+namespace Genocs.BlazorWasm.Template.Client.Components.Common;
 
 public partial class ErrorHandler
 {

@@ -1,6 +1,6 @@
-using Genocs.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
 
-namespace Genocs.Template.Client.Infrastructure.Auth;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
 
 public interface IAuthenticationService
 {

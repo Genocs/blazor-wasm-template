@@ -1,14 +1,13 @@
-﻿using Genocs.Template.Client.Components.EntityTable;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Common;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Mapster;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using MudBlazor;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Pages.Catalog;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Catalog;
 
 public partial class Products
 {
@@ -17,9 +16,9 @@ public partial class Products
     [Inject]
     protected IBrandsClient BrandsClient { get; set; } = default!;
 
-    protected EntityServerTableContext<ProductDto, Guid, ProductViewModel> Context { get; set; } = default!;
+    protected EntityServerTableContext<ProductDto, DefaultIdType, ProductViewModel> Context { get; set; } = default!;
 
-    private EntityTable<ProductDto, Guid, ProductViewModel> _table = default!;
+    private EntityTable<ProductDto, DefaultIdType, ProductViewModel> _table = default!;
 
     protected override void OnInitialized() =>
         Context = new(
@@ -51,7 +50,7 @@ public partial class Products
             {
                 if (!string.IsNullOrEmpty(prod.ImageInBytes))
                 {
-                    prod.Image = new FileUploadRequest() { Data = prod.ImageInBytes, Extension = prod.ImageExtension ?? string.Empty, Name = $"{prod.Name}_{Guid.NewGuid():N}" };
+                    prod.Image = new FileUploadRequest() { Data = prod.ImageInBytes, Extension = prod.ImageExtension ?? string.Empty, Name = $"{prod.Name}_{DefaultIdType.NewGuid():N}" };
                 }
 
                 await ProductsClient.CreateAsync(prod.Adapt<CreateProductRequest>());
@@ -62,7 +61,7 @@ public partial class Products
                 if (!string.IsNullOrEmpty(prod.ImageInBytes))
                 {
                     prod.DeleteCurrentImage = true;
-                    prod.Image = new FileUploadRequest() { Data = prod.ImageInBytes, Extension = prod.ImageExtension ?? string.Empty, Name = $"{prod.Name}_{Guid.NewGuid():N}" };
+                    prod.Image = new FileUploadRequest() { Data = prod.ImageInBytes, Extension = prod.ImageExtension ?? string.Empty, Name = $"{prod.Name}_{DefaultIdType.NewGuid():N}" };
                 }
 
                 await ProductsClient.UpdateAsync(id, prod.Adapt<UpdateProductRequest>());
@@ -82,8 +81,8 @@ public partial class Products
 
     // Advanced Search
 
-    private Guid _searchBrandId;
-    private Guid SearchBrandId
+    private DefaultIdType _searchBrandId;
+    private DefaultIdType SearchBrandId
     {
         get => _searchBrandId;
         set

@@ -1,8 +1,8 @@
-﻿using Genocs.Template.Client.Infrastructure.Preferences;
-using Genocs.Template.Client.Infrastructure.Theme;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Shared;
+namespace Genocs.BlazorWasm.Template.Client.Shared;
 
 public partial class BaseLayout
 {

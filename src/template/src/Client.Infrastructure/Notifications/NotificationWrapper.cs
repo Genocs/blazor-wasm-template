@@ -1,7 +1,7 @@
+using Genocs.BlazorWasm.Template.Shared.Notifications;
 using MediatR;
-using Shared.Notifications;
 
-namespace Genocs.Template.Client.Infrastructure.Notifications;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
 
 public class NotificationWrapper<TNotificationMessage> : INotification
     where TNotificationMessage : INotificationMessage

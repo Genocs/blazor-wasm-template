@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Shared;
+namespace Genocs.BlazorWasm.Template.Client.Shared;
 
 public static class DialogServiceExtensions
 {

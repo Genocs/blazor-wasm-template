@@ -1,6 +1,6 @@
 ﻿using MudBlazor;
 
-namespace Genocs.Template.Client.Infrastructure.Theme;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
 
 public static class CustomColors
 {

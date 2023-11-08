@@ -1,13 +1,13 @@
-﻿using Genocs.Template.Client.Components.EntityTable;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Pages.Identity.Users;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Identity.Users;
 
 public partial class Users
 {
@@ -19,7 +19,7 @@ public partial class Users
     [Inject]
     protected IUsersClient UsersClient { get; set; } = default!;
 
-    protected EntityClientTableContext<UserDetailsDto, Guid, CreateUserRequest> Context { get; set; } = default!;
+    protected EntityClientTableContext<UserDetailsDto, DefaultIdType, CreateUserRequest> Context { get; set; } = default!;
 
     private bool _canExportUsers;
     private bool _canViewRoles;
@@ -71,10 +71,10 @@ public partial class Users
             exportAction: string.Empty);
     }
 
-    private void ViewProfile(in Guid userId) =>
+    private void ViewProfile(in DefaultIdType userId) =>
         Navigation.NavigateTo($"/users/{userId}/profile");
 
-    private void ManageRoles(in Guid userId) =>
+    private void ManageRoles(in DefaultIdType userId) =>
         Navigation.NavigateTo($"/users/{userId}/roles");
 
     private void TogglePasswordVisibility()

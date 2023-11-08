@@ -1,4 +1,4 @@
-namespace Shared.MultiTenancy;
+namespace Genocs.BlazorWasm.Template.Shared.MultiTenancy;
 
 public class MultitenancyConstants
 {

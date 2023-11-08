@@ -1,12 +1,11 @@
-﻿using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Infrastructure.Common;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Shared;
+namespace Genocs.BlazorWasm.Template.Client.Shared;
 
 public partial class NavMenu
 {

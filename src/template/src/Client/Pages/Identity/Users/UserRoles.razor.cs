@@ -1,13 +1,12 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Shared;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Pages.Identity.Users;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Identity.Users;
 
 public partial class UserRoles
 {

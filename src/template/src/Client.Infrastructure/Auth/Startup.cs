@@ -1,10 +1,11 @@
-﻿using Genocs.Template.Client.Infrastructure.Auth.AzureAd;
-using Genocs.Template.Client.Infrastructure.Auth.Jwt;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.AzureAd;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.Jwt;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication.Internal;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Genocs.Template.Client.Infrastructure.Auth;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
 
 internal static class Startup
 {

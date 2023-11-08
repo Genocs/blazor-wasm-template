@@ -1,9 +1,9 @@
-using Genocs.Template.Client.Components.Common;
-using Genocs.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Client.Components.Common;
+using Genocs.BlazorWasm.Template.Client.Shared;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Components.EntityTable;
+namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 
 public partial class AddEditModal<TRequest> : IAddEditModal<TRequest>
 {

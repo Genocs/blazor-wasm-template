@@ -1,7 +1,7 @@
-﻿using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Shared.Authorization;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Components.EntityTable;
+namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 
 /// <summary>
 /// Abstract base class for the initialization Context of the EntityTable Component.

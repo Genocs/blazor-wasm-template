@@ -1,7 +1,7 @@
-using Genocs.Template.Client.Components.Dialogs;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Client.Components.Dialogs;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Shared;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.JSInterop;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Components.EntityTable;
+namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 
 public partial class EntityTable<TEntity, TId, TRequest>
     where TRequest : new()
@@ -75,10 +75,10 @@ public partial class EntityTable<TEntity, TId, TRequest>
 
     private async Task<bool> CanDoActionAsync(string? action, AuthenticationState state) =>
         !string.IsNullOrWhiteSpace(action) &&
-            ((bool.TryParse(action, out bool isTrue) && isTrue) || // check if action equals "True", then it's allowed
-            (Context.EntityResource is { } resource && await AuthService.HasPermissionAsync(state.User, action, resource)));
+            (bool.TryParse(action, out bool isTrue) && isTrue || // check if action equals "True", then it's allowed
+            Context.EntityResource is { } resource && await AuthService.HasPermissionAsync(state.User, action, resource));
 
-    private bool HasActions => _canUpdate || _canDelete || (Context.HasExtraActionsFunc is not null && Context.HasExtraActionsFunc());
+    private bool HasActions => _canUpdate || _canDelete || Context.HasExtraActionsFunc is not null && Context.HasExtraActionsFunc();
     private bool CanUpdateEntity(TEntity entity) => _canUpdate && (Context.CanUpdateEntityFunc is null || Context.CanUpdateEntityFunc(entity));
     private bool CanDeleteEntity(TEntity entity) => _canDelete && (Context.CanDeleteEntityFunc is null || Context.CanDeleteEntityFunc(entity));
 
@@ -297,7 +297,7 @@ public partial class EntityTable<TEntity, TId, TRequest>
     private async Task Delete(TEntity entity)
     {
         _ = Context.IdFunc ?? throw new InvalidOperationException("IdFunc can't be null!");
-        TId id = Context.IdFunc(entity);
+        var id = Context.IdFunc(entity);
 
         string deleteContent = L["You're sure you want to delete {0} with id '{1}'?"];
         var parameters = new DialogParameters

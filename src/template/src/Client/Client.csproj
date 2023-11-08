@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
-        <RootNamespace>Genocs.Template.Client</RootNamespace>
-        <AssemblyName>Genocs.Template.Client</AssemblyName>
+        <RootNamespace>Genocs.BlazorWasm.Template.Client</RootNamespace>
+        <AssemblyName>Genocs.BlazorWasm.Template.Client</AssemblyName>
         <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
         <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
     </PropertyGroup>

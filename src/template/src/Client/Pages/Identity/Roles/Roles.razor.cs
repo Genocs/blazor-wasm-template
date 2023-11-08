@@ -1,13 +1,12 @@
-﻿using Genocs.Template.Client.Components.EntityTable;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Pages.Identity.Roles;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Identity.Roles;
 
 public partial class Roles
 {

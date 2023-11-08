@@ -1,4 +1,4 @@
-﻿namespace Genocs.Template.Client.Components.EntityTable;
+﻿namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 
 /// <summary>
 /// Initialization Context for the EntityTable Component.

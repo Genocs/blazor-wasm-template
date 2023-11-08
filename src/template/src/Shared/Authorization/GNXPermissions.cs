@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace Genocs.WebApi.Shared.Authorization;
+namespace Genocs.BlazorWasm.Template.Shared.Authorization;
 
 public static class GNXAction
 {

@@ -1,4 +1,4 @@
-﻿namespace Shared.Notifications;
+﻿namespace Genocs.BlazorWasm.Template.Shared.Notifications;
 
 public class BasicNotification : INotificationMessage
 {

@@ -1,25 +1,24 @@
-﻿using Genocs.Template.Client.Components.EntityTable;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Shared;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Pages.Multitenancy;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Multitenancy;
 
 public partial class Tenants
 {
     [Inject]
     private ITenantsClient TenantsClient { get; set; } = default!;
     private string? _searchString;
-    protected EntityClientTableContext<TenantDetail, Guid, CreateTenantRequest> Context { get; set; } = default!;
+    protected EntityClientTableContext<TenantDetail, DefaultIdType, CreateTenantRequest> Context { get; set; } = default!;
     private List<TenantDetail> _tenants = new();
-    public EntityTable<TenantDetail, Guid, CreateTenantRequest> EntityTable { get; set; } = default!;
+    public EntityTable<TenantDetail, DefaultIdType, CreateTenantRequest> EntityTable { get; set; } = default!;
     [CascadingParameter]
     protected Task<AuthenticationState> AuthState { get; set; } = default!;
     [Inject]

@@ -1,6 +1,6 @@
-using Shared.Notifications;
+using Genocs.BlazorWasm.Template.Shared.Notifications;
 
-namespace Genocs.Template.Client.Infrastructure.Notifications;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
 
 public interface INotificationPublisher
 {

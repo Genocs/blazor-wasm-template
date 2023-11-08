@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication.Internal;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Genocs.Template.Client.Infrastructure.Auth.Jwt;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.Jwt;
 
 internal class AccessTokenProviderAccessor : IAccessTokenProviderAccessor
 {

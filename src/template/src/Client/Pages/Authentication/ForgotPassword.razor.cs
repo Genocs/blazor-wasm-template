@@ -1,10 +1,10 @@
-﻿using Genocs.Template.Client.Components.Common;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Shared;
+﻿using Genocs.BlazorWasm.Template.Client.Components.Common;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Shared.MultiTenancy;
 using Microsoft.AspNetCore.Components;
-using Shared.MultiTenancy;
 
-namespace Genocs.Template.Client.Pages.Authentication;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Authentication;
 
 public partial class ForgotPassword
 {

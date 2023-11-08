@@ -1,16 +1,16 @@
-﻿using Genocs.Template.Client.Components.Common;
-using Genocs.Template.Client.Components.Dialogs;
-using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Infrastructure.Common;
-using Genocs.Template.Client.Shared;
+﻿using Genocs.BlazorWasm.Template.Client.Components.Common;
+using Genocs.BlazorWasm.Template.Client.Components.Dialogs;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using MudBlazor;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Pages.Identity.Account;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Identity.Account;
 
 public partial class Profile
 {
@@ -38,7 +38,7 @@ public partial class Profile
             _profileModel.FirstName = user.GetFirstName() ?? string.Empty;
             _profileModel.LastName = user.GetSurname() ?? string.Empty;
             _profileModel.PhoneNumber = user.GetPhoneNumber();
-            _imageUrl = string.IsNullOrEmpty(user?.GetImageUrl()) ? string.Empty : (Config[ConfigNames.ApiBaseUrl] + user?.GetImageUrl());
+            _imageUrl = string.IsNullOrEmpty(user?.GetImageUrl()) ? string.Empty : Config[ConfigNames.ApiBaseUrl] + user?.GetImageUrl();
             if (_userId is not null) _profileModel.Id = _userId;
         }
 
@@ -70,7 +70,7 @@ public partial class Profile
                 return;
             }
 
-            string? fileName = $"{_userId}-{Guid.NewGuid():N}";
+            string? fileName = $"{_userId}-{DefaultIdType.NewGuid():N}";
             fileName = fileName[..Math.Min(fileName.Length, 90)];
             var imageFile = await file.RequestImageFileAsync(ApplicationConstants.StandardImageFormat, ApplicationConstants.MaxImageWidth, ApplicationConstants.MaxImageHeight);
             byte[]? buffer = new byte[imageFile.Size];

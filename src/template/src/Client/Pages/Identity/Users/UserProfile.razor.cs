@@ -1,13 +1,13 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Infrastructure.Common;
-using Genocs.Template.Client.Shared;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 
-namespace Genocs.Template.Client.Pages.Identity.Users;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Identity.Users;
 
 public partial class UserProfile
 {
@@ -58,7 +58,7 @@ public partial class UserProfile
             _phoneNumber = user.PhoneNumber;
             _active = user.IsActive;
             _emailConfirmed = user.EmailConfirmed;
-            _imageUrl = string.IsNullOrEmpty(user.ImageUrl) ? string.Empty : (Config[ConfigNames.ApiBaseUrl] + user.ImageUrl);
+            _imageUrl = string.IsNullOrEmpty(user.ImageUrl) ? string.Empty : Config[ConfigNames.ApiBaseUrl] + user.ImageUrl;
             Title = $"{_firstName} {_lastName}'s {_localizer["Profile"]}";
             Description = _email;
             if (_firstName?.Length > 0)

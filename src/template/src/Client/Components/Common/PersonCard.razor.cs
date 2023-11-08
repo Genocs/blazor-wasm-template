@@ -1,9 +1,9 @@
-﻿using Genocs.Template.Client.Infrastructure.Common;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Components.Common;
+namespace Genocs.BlazorWasm.Template.Client.Components.Common;
 
 public partial class PersonCard
 {
@@ -38,7 +38,7 @@ public partial class PersonCard
                 FullName = user.GetFullName();
                 UserId = user.GetUserId();
                 Email = user.GetEmail();
-                ImageUri = string.IsNullOrEmpty(user?.GetImageUrl()) ? string.Empty : (Config[ConfigNames.ApiBaseUrl] + user?.GetImageUrl());
+                ImageUri = string.IsNullOrEmpty(user?.GetImageUrl()) ? string.Empty : Config[ConfigNames.ApiBaseUrl] + user?.GetImageUrl();
                 StateHasChanged();
             }
         }

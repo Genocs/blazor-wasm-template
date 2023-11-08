@@ -1,8 +1,8 @@
-﻿using Genocs.Template.Client.Infrastructure.Preferences;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Shared;
+namespace Genocs.BlazorWasm.Template.Client.Shared;
 
 public partial class MainLayout
 {
@@ -47,13 +47,13 @@ public partial class MainLayout
     {
         var parameters = new DialogParameters
             {
-                { nameof(Dialogs.Logout.ContentText), $"{L["Logout Confirmation"]}"},
-                { nameof(Dialogs.Logout.ButtonText), $"{L["Logout"]}"},
-                { nameof(Dialogs.Logout.Color), Color.Error}
+                { nameof(Genocs.Template.Client.Shared.Dialogs.Logout.ContentText), $"{L["Logout Confirmation"]}"},
+                { nameof(Genocs.Template.Client.Shared.Dialogs.Logout.ButtonText), $"{L["Logout"]}"},
+                { nameof(Genocs.Template.Client.Shared.Dialogs.Logout.Color), Color.Error}
             };
 
         var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Small, FullWidth = true };
-        DialogService.Show<Dialogs.Logout>(L["Logout"], parameters, options);
+        DialogService.Show<Genocs.Template.Client.Shared.Dialogs.Logout>(L["Logout"], parameters, options);
     }
 
     private void Profile()

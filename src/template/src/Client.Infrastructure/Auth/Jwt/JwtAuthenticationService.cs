@@ -1,9 +1,9 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Infrastructure.Auth.Jwt;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.Jwt;
 
 public class JwtAuthenticationService : AuthenticationStateProvider, IAuthenticationService, IAccessTokenProvider
 {
@@ -216,7 +216,7 @@ public class JwtAuthenticationService : AuthenticationStateProvider, IAuthentica
     private byte[] ParseBase64WithoutPadding(string payload)
     {
         payload = payload.Trim().Replace('-', '+').Replace('_', '/');
-        string base64 = payload.PadRight(payload.Length + ((4 - (payload.Length % 4)) % 4), '=');
+        string base64 = payload.PadRight(payload.Length + (4 - payload.Length % 4) % 4, '=');
         return Convert.FromBase64String(base64);
     }
 }

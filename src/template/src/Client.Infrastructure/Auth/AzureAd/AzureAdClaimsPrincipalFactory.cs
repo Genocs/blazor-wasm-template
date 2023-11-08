@@ -1,10 +1,10 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication.Internal;
 using Microsoft.Extensions.DependencyInjection;
-using Shared.Authorization;
 
-namespace Genocs.Template.Client.Infrastructure.Auth.AzureAd;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.AzureAd;
 
 internal class AzureAdClaimsPrincipalFactory : AccountClaimsPrincipalFactory<RemoteUserAccount>
 {

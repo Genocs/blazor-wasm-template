@@ -46,11 +46,6 @@
 ## Blazor WebAssembly Template
 
 The template can be used with the `genocs cli` or `dotnet new` command or with the `Visual Studio 2022` or `Visual Studio Code` IDEs.
-
-## YouTube Video - Genocs Library - Getting Started
-
-Watch the Getting started video here: [youtube intro](https://www.youtube.com/watch?v=TgxDvU---Ak)
-
 Built with .NET7 and MudBlazor Component Library. Incorporates the most essential Packages your projects will ever need. Follows Clean Architecture Principles.
 
 ## Goals
@@ -69,19 +64,19 @@ The goal of this repository is to help developers/companies kickstart their Web 
 
 Open up your Command Prompt / Powershell and run the following command to install the solution template.
 
-``` PS
-dotnet new --install Genocs.Microservice.Template
+```bash
+dotnet new --install Genocs.BlazorWasm.Template
 ```
 
 or, if you want to use a specific version of the boilerplate, use
 
-```powershell
-dotnet new --install Genocs.Microservice.Template::1.0.0
+```bash
+dotnet new --install Genocs.BlazorWasm.Template::1.0.0
 ```
 
 This would install the `Genocs Blazor WebAssembly Template` globally on your machine. Do note that, at the time of writing this documentation, the latest available version is **1.0.0** which is also one of the first stable release version of the package. It is highly likely that there is already a newer version available when you are reading this.
 
-> *To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.Microservice.Template/)*
+> *To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.BlazorWasm.Template/)*
 >
 
 **Genocs.BlazorWasm.Template::1.0.0 is compatible only with Genocs.Microservice.Template::1.0.0 and above.**
@@ -89,7 +84,7 @@ This would install the `Genocs Blazor WebAssembly Template` globally on your mac
 Get the .NET WebApi Boilerplate by running the following command
 
 ```
-dotnet new --install Genocs.BlazorWasm.Template::1.0.0
+dotnet new --install Genocs.Microservice.Template::1.0.0
 ```
 
 For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/blazor-template/general/overview/)

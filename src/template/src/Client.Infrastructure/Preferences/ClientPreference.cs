@@ -1,6 +1,7 @@
-﻿using Genocs.Template.Client.Infrastructure.Theme;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
 
-namespace Genocs.Template.Client.Infrastructure.Preferences;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 
 public class ClientPreference : IPreference
 {

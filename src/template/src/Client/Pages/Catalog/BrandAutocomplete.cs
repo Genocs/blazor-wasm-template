@@ -1,12 +1,12 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Shared;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Pages.Catalog;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Catalog;
 
-public class BrandAutocomplete : MudAutocomplete<Guid>
+public class BrandAutocomplete : MudAutocomplete<DefaultIdType>
 {
     [Inject]
     private IStringLocalizer<BrandAutocomplete> L { get; set; } = default!;
@@ -45,7 +45,7 @@ public class BrandAutocomplete : MudAutocomplete<Guid>
         }
     }
 
-    private async Task<IEnumerable<Guid>> SearchBrands(string value)
+    private async Task<IEnumerable<DefaultIdType>> SearchBrands(string value)
     {
         var filter = new SearchBrandsRequest
         {
@@ -63,6 +63,6 @@ public class BrandAutocomplete : MudAutocomplete<Guid>
         return _brands.Select(x => x.Id);
     }
 
-    private string GetBrandName(Guid id)
+    private string GetBrandName(DefaultIdType id)
         => _brands.Find(b => b.Id == id)?.Name ?? string.Empty;
 }

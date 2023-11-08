@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 
-namespace Genocs.Template.Client.Components.EntityTable;
+namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 
 public record EntityField<TEntity>(Func<TEntity, object?> ValueFunc, string DisplayName, string SortLabel = "", Type? Type = null, RenderFragment<TEntity>? Template = null)
 {

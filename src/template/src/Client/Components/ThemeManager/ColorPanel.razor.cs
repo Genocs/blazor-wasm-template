@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Components.ThemeManager;
+namespace Genocs.BlazorWasm.Template.Client.Components.ThemeManager;
 
 public partial class ColorPanel
 {

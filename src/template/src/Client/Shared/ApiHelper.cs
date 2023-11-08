@@ -1,8 +1,8 @@
-﻿using Genocs.Template.Client.Components.Common;
-using Genocs.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Client.Components.Common;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
 using MudBlazor;
 
-namespace Genocs.Template.Client.Shared;
+namespace Genocs.BlazorWasm.Template.Client.Shared;
 
 public static class ApiHelper
 {

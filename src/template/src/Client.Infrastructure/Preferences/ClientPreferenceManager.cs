@@ -1,8 +1,8 @@
-﻿using System.Text.RegularExpressions;
-using Genocs.Template.Client.Infrastructure.Theme;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
 using MudBlazor;
+using System.Text.RegularExpressions;
 
-namespace Genocs.Template.Client.Infrastructure.Preferences;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 
 public class ClientPreferenceManager : IClientPreferenceManager
 {

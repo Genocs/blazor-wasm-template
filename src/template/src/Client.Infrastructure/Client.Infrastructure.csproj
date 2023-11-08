@@ -4,9 +4,9 @@
         <TargetFrameworks>net7.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageId>Genocs.Template.Client.Infrastructure</PackageId>
-        <RootNamespace>Genocs.Template.Client.Infrastructure</RootNamespace>
-        <AssemblyName>Genocs.Template.Client.Infrastructure</AssemblyName>
+        <PackageId>Genocs.BlazorWasm.Template.Client.Infrastructure</PackageId>
+        <RootNamespace>Genocs.BlazorWasm.Template.Client.Infrastructure</RootNamespace>
+        <AssemblyName>Genocs.BlazorWasm.Template.Client.Infrastructure</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

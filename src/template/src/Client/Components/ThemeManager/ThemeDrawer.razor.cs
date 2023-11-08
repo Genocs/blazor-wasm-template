@@ -1,8 +1,8 @@
-﻿using Genocs.Template.Client.Infrastructure.Preferences;
-using Genocs.Template.Client.Infrastructure.Theme;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
 using Microsoft.AspNetCore.Components;
 
-namespace Genocs.Template.Client.Components.ThemeManager;
+namespace Genocs.BlazorWasm.Template.Client.Components.ThemeManager;
 
 public partial class ThemeDrawer
 {

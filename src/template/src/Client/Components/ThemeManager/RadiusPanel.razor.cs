@@ -1,7 +1,7 @@
-using Genocs.Template.Client.Infrastructure.Preferences;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 using Microsoft.AspNetCore.Components;
 
-namespace Genocs.Template.Client.Components.ThemeManager;
+namespace Genocs.BlazorWasm.Template.Client.Components.ThemeManager;
 
 public partial class RadiusPanel
 {

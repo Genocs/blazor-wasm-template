@@ -1,16 +1,15 @@
-﻿using Genocs.Template.Client.Infrastructure.ApiClient;
-using Genocs.Template.Client.Infrastructure.Auth;
-using Genocs.Template.Client.Shared;
-using Genocs.WebApi.Shared.Authorization;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Client.Shared;
+using Genocs.BlazorWasm.Template.Shared.Authorization;
+using Genocs.BlazorWasm.Template.Shared.MultiTenancy;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor;
-using Shared.Authorization;
-using Shared.MultiTenancy;
 
-namespace Genocs.Template.Client.Pages.Identity.Roles;
+namespace Genocs.BlazorWasm.Template.Client.Pages.Identity.Roles;
 
 public partial class RolePermissions
 {
