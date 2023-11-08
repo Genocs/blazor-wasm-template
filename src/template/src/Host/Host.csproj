@@ -2,10 +2,10 @@
 
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
-        <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>Genocs.Template.Host</RootNamespace>
-        <AssemblyName>Genocs.Template.Host</AssemblyName>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Genocs.BlazorWasm.Template.Host</RootNamespace>
+        <AssemblyName>Genocs.BlazorWasm.Template.Host</AssemblyName>
         <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
     </PropertyGroup>
 

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Genocs.Template.Server.Pages;
+namespace Genocs.BlazorWasm.Template.Host.Pages;
 
 [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 [IgnoreAntiforgeryToken]

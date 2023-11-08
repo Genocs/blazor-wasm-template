@@ -1,6 +1,6 @@
 {
-  "name": "Genocs.Template",
-  "short_name": "Genocs.Template",
+  "name": "Genocs.BlazorWasm.Template",
+  "short_name": "Genocs.BlazorWasm.Template",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
