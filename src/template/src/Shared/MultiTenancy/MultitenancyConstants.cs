@@ -6,7 +6,7 @@ public class MultitenancyConstants
     {
         public const string Id = "root";
         public const string Name = "Root";
-        public const string EmailAddress = "admin@genocs.com";
+        public const string EmailAddress = "admin@root.com";
     }
 
     /// <summary>
