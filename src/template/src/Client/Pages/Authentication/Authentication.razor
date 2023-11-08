@@ -1,11 +1,12 @@
 ﻿@page "/authentication/{action}"
+@using Microsoft.AspNetCore.WebUtilities
 @attribute [AllowAnonymous]
 
 @inject IStringLocalizer<Authentication> L
 
 <RemoteAuthenticatorView Action="@Action">
     @* Override the different child items to adapt them to our own style
-        I've done this for LogOutSucceeded now, already added the rest but with the defaults (and localization). *@
+    I've done this for LogOutSucceeded now, already added the rest but with the defaults (and localization). *@
     <LogOutSucceeded>
         <MudItem Class="d-flex justify-center">
             <MudText Typo="Typo.h5" GutterBottom="true">
@@ -61,7 +62,7 @@
 
     private string? GetMessage()
     {
-        var query = Navigation.ToAbsoluteUri(Navigation.Uri).Query;
+        string? query = Navigation.ToAbsoluteUri(Navigation.Uri).Query;
 
         if (!string.IsNullOrWhiteSpace(query)
             && QueryHelpers.ParseQuery(query).TryGetValue("message", out var message))
