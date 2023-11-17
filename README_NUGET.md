@@ -41,25 +41,8 @@
 [twitterx-url]: https://twitter.com/genocs
 
 
-<!-- PROJECT LOGO -->
-<p align="center">
-  <a href="https://github.com/Genocs/blazor-clean-template">
-    <img src="https://raw.githubusercontent.com/Genocs/blazor-clean-template/main/assets/genocs-library-logo.png" alt="Blazor Wasm Portal">
-  </a>
-  <h3 align="center">Blazor WebAssembly Template</h3>
-  <p align="center">
-    Open Source Solution Template For Blazor Web-Assembly 6.0 built with MudBlazor Components
-    <br />
-    <a href="https://genocs-blog.netlify.app/blazor-wasm-template/general/getting-started/"><strong>Read the Documentation »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Genocs/blazor-wasm-template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Genocs/blazor-wasm-template/issues">Request Feature</a>
-    .
-    <a href="https://github.com/Genocs/blazor-wasm-template/issues">Request Documentation</a>
-  </p>
-</p>
+
+![.NET template banner](https://raw.githubusercontent.com/Genocs/blazor-wasm-template/main/assets/genocs-library-logo.png ".NET template banner")
 
 ## Blazor WebAssembly Template
 

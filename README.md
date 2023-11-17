@@ -43,8 +43,8 @@
 
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/Genocs/blazor-clean-template">
-    <img src="https://raw.githubusercontent.com/Genocs/blazor-clean-template/main/assets/genocs-library-logo.png" alt="Blazor Wasm Portal">
+  <a href="https://github.com/Genocs/blazor-wasm-template">
+    <img src="https://raw.githubusercontent.com/Genocs/blazor-wasm-template/main/assets/genocs-library-logo.png" alt="Blazor Wasm Portal">
   </a>
   <h3 align="center">Blazor WebAssembly Template</h3>
   <p align="center">
