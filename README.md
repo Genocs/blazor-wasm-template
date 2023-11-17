@@ -41,12 +41,30 @@
 [twitterx-url]: https://twitter.com/genocs
 
 
-![.NET template banner](https://raw.githubusercontent.com/Genocs/blazor-wasm-template/main/assets/genocs-library-logo.png ".NET template banner")
+<!-- PROJECT LOGO -->
+<p align="center">
+  <a href="https://github.com/Genocs/blazor-clean-template">
+    <img src="https://raw.githubusercontent.com/Genocs/blazor-clean-template/main/assets/genocs-library-logo.png" alt="Blazor Wasm Portal">
+  </a>
+  <h3 align="center">Blazor WebAssembly Template</h3>
+  <p align="center">
+    Open Source Solution Template For Blazor Web-Assembly 6.0 built with MudBlazor Components
+    <br />
+    <a href="https://genocs-blog.netlify.app/blazor-wasm-template/general/getting-started/"><strong>Read the Documentation »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Genocs/blazor-wasm-template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Genocs/blazor-wasm-template/issues">Request Feature</a>
+    .
+    <a href="https://github.com/Genocs/blazor-wasm-template/issues">Request Documentation</a>
+  </p>
+</p>
 
 ## Blazor WebAssembly Template
 
-The template can be used with the `genocs cli` or `dotnet new` command or with the `Visual Studio 2022` or `Visual Studio Code` IDEs.
-Built with .NET7 and MudBlazor Component Library. Incorporates the most essential Packages your projects will ever need. Follows Clean Architecture Principles.
+The template can be used with the `genocs cli`, `dotnet new` command or with the `Visual Studio 2022`, `Visual Studio Code` IDEs.
+Built with .NET7 and MudBlazor Component Library. Incorporates the most essential packages your projects will ever need. Follows Clean Architecture Principles.
 
 ## Goals
 
@@ -87,16 +105,16 @@ Get the .NET WebApi Boilerplate by running the following command
 dotnet new --install Genocs.Microservice.Template::1.0.0
 ```
 
-For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/blazor-template/general/overview/)
+For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/blazor-wasm-template/general/overview/)
 
 
 ## Links & Documentations
 
-[Overview](https://https://genocs-blog.netlify.app/dotnet-templates/general/overview/)
+[Overview](https://https://genocs-blog.netlify.app/blazor-wasm-template/general/overview/)
 
-[Getting Started](https://https://genocs-blog.netlify.app/dotnet-templates/general/getting-started/)
+[Getting Started](https://https://genocs-blog.netlify.app/blazor-wasm-template/general/getting-started/)
 
-[Development Environment](https://https://genocs-blog.netlify.app/dotnet-templates/general/development-environment/)
+[Development Environment](https://https://genocs-blog.netlify.app/blazor-wasm-template/general/development-environment/)
 
 [Participate in QNA & General Discussions](https://github.com/Genocs/blazor-wasm-template/discussions)
 
@@ -139,7 +157,6 @@ This project exists thanks to all the people who contribute. [Submit your PR and
 Become a financial contributor and help me sustain the project.
 
 **Support the Project** on [Opencollective](https://opencollective.com/genocs)
-
 
 ## Acknowledgements
 
