@@ -2,8 +2,6 @@
 
     <PropertyGroup>
         <TargetFrameworks>net7.0</TargetFrameworks>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
         <PackageId>Genocs.BlazorWasm.Template.Client.Infrastructure</PackageId>
         <RootNamespace>Genocs.BlazorWasm.Template.Client.Infrastructure</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Client.Infrastructure</AssemblyName>
@@ -31,13 +29,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Shared\Shared.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Update="Roslynator.Analyzers" Version="4.6.2">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
     </ItemGroup>
 
     <Target Name="NSwag">

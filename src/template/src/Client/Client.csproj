@@ -2,8 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>        
         <RootNamespace>Genocs.BlazorWasm.Template.Client</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Client</AssemblyName>
         <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
@@ -33,13 +31,6 @@
              There's something too much trimmed from Msal in the publish step. Then, after logging in,
              the user gets redirected to authentication/login-failed with no error message. -->
         <TrimmerRootAssembly Include="Microsoft.Authentication.WebAssembly.Msal" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Update="Roslynator.Analyzers" Version="4.6.2">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
     </ItemGroup>
 
 </Project>

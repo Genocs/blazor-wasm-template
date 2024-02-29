@@ -1,16 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
         <PackageId>Genocs.BlazorWasm.Template.Shared</PackageId>
         <RootNamespace>Genocs.BlazorWasm.Template.Shared</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Shared</AssemblyName>
     </PropertyGroup>
-    <ItemGroup>
-        <PackageReference Update="Roslynator.Analyzers" Version="4.6.2">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-    </ItemGroup>
+
 </Project>
