@@ -27,11 +27,11 @@
                 @if (Context.AdvancedSearchEnabled)
                 {
                     <div style="margin-top:10px!important">
-                        <MudCheckBox Label="All Columns" T="bool" Checked="Context.AllColumnsChecked"
-                            CheckedChanged="Context.AllColumnsCheckChanged"></MudCheckBox>
+                        <MudCheckBox Label="All Columns" T="bool" Value="Context.AllColumnsChecked"
+                            ValueChanged="Context.AllColumnsCheckChanged"></MudCheckBox>
                         @foreach (var field in Context.Fields)
                         {
-                            <MudCheckBox @bind-Checked="@field.CheckedForSearch" Label="@(field.DisplayName)"></MudCheckBox>
+                            <MudCheckBox @bind-Value="@field.CheckedForSearch" Label="@(field.DisplayName)"></MudCheckBox>
                         }
                     </div>
                 }
@@ -102,7 +102,7 @@
                         }
                         else if (field.Type == typeof(bool))
                         {
-                            <MudCheckBox Checked="@field.ValueFunc(context)" ReadOnly Color="Color.Secondary"></MudCheckBox>
+                            <MudCheckBox Value="@field.ValueFunc(context)" ReadOnly Color="Color.Secondary"></MudCheckBox>
                         }
                         else
                         {

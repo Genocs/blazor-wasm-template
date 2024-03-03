@@ -10,6 +10,7 @@ public class GnxTable<T> : MudTable<T>
 {
     [Inject]
     private IClientPreferenceManager ClientPreferences { get; set; } = default!;
+
     [Inject]
     protected ICourier Courier { get; set; } = default!;
 

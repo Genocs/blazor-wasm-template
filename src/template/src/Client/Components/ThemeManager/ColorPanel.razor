@@ -13,7 +13,7 @@
                     @foreach (var color in Colors)
                     {
                         <MudButton OnClick="@(() => ColorClicked(color))"
-                        style="padding:0px!important;border-radius:0px!important">
+                                   style="padding:0px!important;border-radius:0px!important">
                             <ChildContent>
                                 <div style="@($"background: {color};"); width: 65px; height: 65px">
                                 </div>

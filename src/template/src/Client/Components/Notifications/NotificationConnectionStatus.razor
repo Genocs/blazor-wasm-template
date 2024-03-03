@@ -8,7 +8,7 @@
     public string TooltipText { get; set; } = "No Connection";
     public string Icon { get; set; } = Icons.Material.Filled.SignalWifi0Bar;
     public Color IconColor { get; set; } = Color.Error;
-    
+
     [CascadingParameter] private NotificationConnection _notifications { get; set; } = default!;
 
     protected override void OnInitialized()
