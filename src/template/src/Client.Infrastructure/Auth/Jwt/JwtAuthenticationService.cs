@@ -164,14 +164,14 @@ public class JwtAuthenticationService : AuthenticationStateProvider, IAuthentica
         await _localStorage.RemoveItemAsync(StorageConstants.Local.Permissions);
     }
 
-    private ValueTask<string> GetCachedAuthTokenAsync() =>
-        _localStorage.GetItemAsync<string>(StorageConstants.Local.AuthToken);
+    private ValueTask<string> GetCachedAuthTokenAsync()
+        => _localStorage.GetItemAsync<string>(StorageConstants.Local.AuthToken);
 
-    private ValueTask<string> GetCachedRefreshTokenAsync() =>
-        _localStorage.GetItemAsync<string>(StorageConstants.Local.RefreshToken);
+    private ValueTask<string> GetCachedRefreshTokenAsync()
+        => _localStorage.GetItemAsync<string>(StorageConstants.Local.RefreshToken);
 
-    private ValueTask<ICollection<string>> GetCachedPermissionsAsync() =>
-        _localStorage.GetItemAsync<ICollection<string>>(StorageConstants.Local.Permissions);
+    private ValueTask<ICollection<string>> GetCachedPermissionsAsync()
+        => _localStorage.GetItemAsync<ICollection<string>>(StorageConstants.Local.Permissions);
 
     private IEnumerable<Claim> GetClaimsFromJwt(string jwt)
     {

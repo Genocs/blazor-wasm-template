@@ -1,5 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication.Internal;
 
 namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.Jwt;

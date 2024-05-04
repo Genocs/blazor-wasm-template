@@ -1,5 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
 
 namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 

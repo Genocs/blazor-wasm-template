@@ -1,5 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
 namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.AzureAd;

@@ -1,6 +1,5 @@
 ﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.AzureAd;
 using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth.Jwt;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication.Internal;
 using Microsoft.Extensions.DependencyInjection;
