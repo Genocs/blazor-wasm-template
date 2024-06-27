@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net7.0</TargetFrameworks>
+        <TargetFrameworks>net8.0</TargetFrameworks>
         <PackageId>Genocs.BlazorWasm.Template.Client.Infrastructure</PackageId>
         <RootNamespace>Genocs.BlazorWasm.Template.Client.Infrastructure</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Client.Infrastructure</AssemblyName>
@@ -9,19 +9,19 @@
 
     <ItemGroup>
         <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
-        <PackageReference Include="MediatR" Version="12.2.0" />
+        <PackageReference Include="MediatR" Version="12.3.0" />
         <PackageReference Include="MediatR.Courier" Version="6.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="7.0.16" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.16" />
-        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
-        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.16" />
-        <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="7.0.13" />
-        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.16" />
-        <PackageReference Include="MudBlazor" Version="6.16.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="8.0.6" />
+        <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="8.0.6" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.6" />
+        <PackageReference Include="MudBlazor" Version="6.20.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="NSwag.MSBuild" Version="13.20.0">
+        <PackageReference Include="NSwag.MSBuild" Version="14.0.8">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>

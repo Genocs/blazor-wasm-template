@@ -23,4 +23,4 @@ RUN dotnet publish "Host.csproj" -c Release -o /app/publish /p:UseAppHost=false
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Host.dll"]
+ENTRYPOINT ["dotnet", "Genocs.BlazorWasm.Template.Host.dll"]
