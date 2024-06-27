@@ -1,7 +1,5 @@
-﻿using System.Globalization;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
 using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
 using Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
 using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
 using Genocs.BlazorWasm.Template.Shared.Authorization;
@@ -9,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 using MudBlazor;
 using MudBlazor.Services;
+using System.Globalization;
 
 namespace Genocs.BlazorWasm.Template.Client.Infrastructure;
 

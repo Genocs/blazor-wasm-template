@@ -2,10 +2,10 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Nocco Giovanni Emanuele",
   "classifications": [
+    "Web",
     "Blazor",
-    "WASM",
     "WebAssembly",
-    "Web"
+    "WASM"
   ],
   "tags": {
     "language": "C#",
@@ -13,7 +13,7 @@
   },
   "identity": "Genocs.BlazorWasm.Template",
   "name": "Genocs: Blazor WebAssembly Template",
-  "description": "Blazor WebAssembly Template for .NET7 built for Genocs WebAPI with MudBlazor Components.",
+  "description": "Blazor WebAssembly Template for .NET8 built for Genocs WebAPI with MudBlazor Components.",
   "groupIdentity": "Genocs.BlazorWasm.Template",
   "shortName": "gnx-blazorwasm",
   "sourceName": "Genocs.BlazorWasm.Template", // Will replace the string 'Genocs.BlazorWasm.Template' with the value provided via -n.

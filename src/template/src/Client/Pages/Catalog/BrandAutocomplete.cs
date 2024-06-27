@@ -10,8 +10,10 @@ public class BrandAutocomplete : MudAutocomplete<DefaultIdType>
 {
     [Inject]
     private IStringLocalizer<BrandAutocomplete> L { get; set; } = default!;
+
     [Inject]
     private IBrandsClient BrandsClient { get; set; } = default!;
+
     [Inject]
     private ISnackbar Snackbar { get; set; } = default!;
 

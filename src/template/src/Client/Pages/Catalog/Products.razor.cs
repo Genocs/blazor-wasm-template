@@ -13,6 +13,7 @@ public partial class Products
 {
     [Inject]
     protected IProductsClient ProductsClient { get; set; } = default!;
+
     [Inject]
     protected IBrandsClient BrandsClient { get; set; } = default!;
 

@@ -12,8 +12,8 @@
 		<icon>.\content\icon.png</icon>
 		<readme>.\content\README_NUGET.md</readme>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<copyright>2023</copyright>
-		<description>Clean Architecture Template for .NET7 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.</description>
+		<copyright>2024</copyright>
+		<description>Clean Architecture Template for .NET8 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.</description>
 		<language>en-US</language>
 		<packageTypes>
 			<packageType name="Template" />

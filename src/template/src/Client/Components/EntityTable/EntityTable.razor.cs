@@ -23,6 +23,7 @@ public partial class EntityTable<TEntity, TId, TRequest>
 
     [Parameter]
     public string? SearchString { get; set; }
+
     [Parameter]
     public EventCallback<string> SearchStringChanged { get; set; }
 
@@ -31,8 +32,10 @@ public partial class EntityTable<TEntity, TId, TRequest>
 
     [Parameter]
     public RenderFragment<TEntity>? ActionsContent { get; set; }
+
     [Parameter]
     public RenderFragment<TEntity>? ExtraActions { get; set; }
+
     [Parameter]
     public RenderFragment<TEntity>? ChildRowContent { get; set; }
 
@@ -41,6 +44,7 @@ public partial class EntityTable<TEntity, TId, TRequest>
 
     [CascadingParameter]
     protected Task<AuthenticationState> AuthState { get; set; } = default!;
+
     [Inject]
     protected IAuthorizationService AuthService { get; set; } = default!;
 

@@ -24,11 +24,11 @@ public partial class PersonCard
     {
         if (firstRender)
         {
-            await LoadUserData();
+            await LoadUserDataAsync();
         }
     }
 
-    private async Task LoadUserData()
+    private async Task LoadUserDataAsync()
     {
         var user = (await AuthState).User;
         if (user.Identity?.IsAuthenticated == true)

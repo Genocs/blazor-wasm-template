@@ -8,12 +8,16 @@ public partial class TableCustomizationPanel
 {
     [Parameter]
     public bool IsDense { get; set; }
+
     [Parameter]
     public bool IsStriped { get; set; }
+
     [Parameter]
     public bool HasBorder { get; set; }
+
     [Parameter]
     public bool IsHoverable { get; set; }
+
     [Inject]
     protected INotificationPublisher Notifications { get; set; } = default!;
 
