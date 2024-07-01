@@ -1,4 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
+﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Themes;
 using MudBlazor;
 using System.Text.RegularExpressions;
 

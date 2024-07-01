@@ -1,5 +1,5 @@
 ﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Themes;
 using Microsoft.AspNetCore.Components;
 
 namespace Genocs.BlazorWasm.Template.Client.Components.ThemeManager;
@@ -22,7 +22,7 @@ public partial class ThemeDrawer
 
     private readonly List<string> _colors = CustomColors.ThemeColors;
 
-    private async Task UpdateThemePrimaryColor(string color)
+    private async Task UpdateThemePrimaryColorAsync(string color)
     {
         if (ThemePreference is not null)
         {
@@ -31,7 +31,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task UpdateThemeSecondaryColor(string color)
+    private async Task UpdateThemeSecondaryColorAsync(string color)
     {
         if (ThemePreference is not null)
         {
@@ -40,7 +40,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task UpdateBorderRadius(double radius)
+    private async Task UpdateBorderRadiusAsync(double radius)
     {
         if (ThemePreference is not null)
         {
@@ -49,7 +49,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task ToggleDarkLightMode(bool isDarkMode)
+    private async Task ToggleDarkLightModeAsync(bool isDarkMode)
     {
         if (ThemePreference is not null)
         {
@@ -58,7 +58,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task ToggleEntityTableDense(bool isDense)
+    private async Task ToggleEntityTableDenseAsync(bool isDense)
     {
         if (ThemePreference is not null)
         {
@@ -67,7 +67,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task ToggleEntityTableStriped(bool isStriped)
+    private async Task ToggleEntityTableStripedAsync(bool isStriped)
     {
         if (ThemePreference is not null)
         {
@@ -76,7 +76,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task ToggleEntityTableBorder(bool hasBorder)
+    private async Task ToggleEntityTableBorderAsync(bool hasBorder)
     {
         if (ThemePreference is not null)
         {
@@ -85,7 +85,7 @@ public partial class ThemeDrawer
         }
     }
 
-    private async Task ToggleEntityTableHoverable(bool isHoverable)
+    private async Task ToggleEntityTableHoverableAsync(bool isHoverable)
     {
         if (ThemePreference is not null)
         {

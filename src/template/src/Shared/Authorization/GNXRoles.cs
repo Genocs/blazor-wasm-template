@@ -13,5 +13,6 @@ public static class GNXRoles
         Basic
     });
 
-    public static bool IsDefault(string roleName) => DefaultRoles.Any(r => r == roleName);
+    public static bool IsDefault(string roleName)
+        => DefaultRoles.Any(r => r == roleName);
 }

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFrameworks>net8.0</TargetFrameworks>
-        <PackageId>Genocs.BlazorWasm.Template.Client.Infrastructure</PackageId>
+        <IsPackable>false</IsPackable>
         <RootNamespace>Genocs.BlazorWasm.Template.Client.Infrastructure</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Client.Infrastructure</AssemblyName>
     </PropertyGroup>

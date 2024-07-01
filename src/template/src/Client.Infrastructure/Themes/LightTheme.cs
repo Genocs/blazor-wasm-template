@@ -1,6 +1,6 @@
 ﻿using MudBlazor;
 
-namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
+namespace Genocs.BlazorWasm.Template.Client.Infrastructure.Themes;
 
 public class LightTheme : MudTheme
 {

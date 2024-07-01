@@ -12,7 +12,7 @@
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
             <MudText Align="Align.Center" Typo="Typo.h5" Class="smaller">@L["Genocs"]</MudText>
-         <MudText Align="Align.Center" Typo="Typo.h4">@L["Web Application"]</MudText>
+            <MudText Align="Align.Center" Class="gnx-gradient" Typo="Typo.h2">@L["Web Portal"]</MudText>
 
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
@@ -30,7 +30,7 @@
             </div>
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
-             <MudText Align="Align.Center">@L["Version 1.0"]</MudText>
+             <MudText Align="Align.Center">@L["Version 6.0"]</MudText>
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
             <MudExpansionPanels>
@@ -59,18 +59,18 @@
                  <MudExpansionPanel Class="mud-elevation-25" Text="@L["User Claims"]">
                     @L["Application Claims of the currently logged in user."]
                      <MudList Dense="true">
-                @if (Claims is not null)
-                {
-                    @foreach (var claim in Claims)
-                    {
-                        <MudListItem>
-                            <MudChip>
-                                @claim.Type
-                            </MudChip>
-                            @claim.Value
-                        </MudListItem>
-                    }
-                }
+                        @if (Claims is not null)
+                        {
+                            @foreach (var claim in Claims)
+                            {
+                                <MudListItem>
+                                    <MudChip>
+                                        @claim.Type
+                                    </MudChip>
+                                    @claim.Value
+                                </MudListItem>
+                            }
+                        }
             </MudList>
                 </MudExpansionPanel>
             </MudExpansionPanels>

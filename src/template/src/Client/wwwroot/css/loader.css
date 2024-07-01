@@ -70,3 +70,9 @@
 .gnx-nav-child {
     padding-left: 10px !important;
 }
+
+.gnx-gradient {
+    background: linear-gradient(82deg, rgb(89, 74, 226) 0%, rgb(255, 102, 153) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+}

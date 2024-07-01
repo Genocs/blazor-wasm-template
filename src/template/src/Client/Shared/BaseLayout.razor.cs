@@ -1,5 +1,5 @@
 ﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Theme;
+using Genocs.BlazorWasm.Template.Client.Infrastructure.Themes;
 using MudBlazor;
 
 namespace Genocs.BlazorWasm.Template.Client.Shared;
