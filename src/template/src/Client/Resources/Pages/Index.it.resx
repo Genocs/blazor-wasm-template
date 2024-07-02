@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Blazor WASM Boilerplate" xml:space="preserve">
+  <data name="Blazor WASM Template" xml:space="preserve">
     <value>Blazor WASM Template</value>
   </data>
   <data name="Built with" xml:space="preserve">

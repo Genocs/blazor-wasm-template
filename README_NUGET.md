@@ -69,23 +69,14 @@ Open up your Command Prompt / Powershell and run the following command to instal
 dotnet new --install Genocs.BlazorWasm.Template
 ```
 
-or, if you want to use a specific version of the boilerplate, use
+This would install the `Genocs Blazor WebAssembly Template` globally on your machine.
 
-```bash
-dotnet new --install Genocs.BlazorWasm.Template::1.1.0
-```
+**Genocs.BlazorWasm.Template::1.1.0 is compatible only with Genocs.Microservice.Template::2.0.0 and above.**
 
-This would install the `Genocs Blazor WebAssembly Template` globally on your machine. Do note that, at the time of writing this documentation, the latest available version is **1.0.0** which is also one of the first stable release version of the package. It is highly likely that there is already a newer version available when you are reading this.
-
-> *To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.BlazorWasm.Template/)*
->
-
-**Genocs.BlazorWasm.Template::1.1.0 is compatible only with Genocs.Microservice.Template::1.0.0 and above.**
-
-Get the .NET WebApi Boilerplate by running the following command
+Get the .NET WebApi Microservice Template by running the following command
 
 ```
-dotnet new --install Genocs.Microservice.Template::1.1.0
+dotnet new --install Genocs.Microservice.Template::2.0.0
 ```
 
 For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/blazor-wasm-template/general/overview/)
