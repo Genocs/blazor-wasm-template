@@ -1,7 +1,10 @@
 # This script is cross-platform, supporting all OSes that PowerShell Core/7 runs on.
 
 $rootDirectory = git rev-parse --show-toplevel
-$sourcePath = Join-Path -Path $rootDirectory -ChildPath '..\dotnet-webapi-template\src\Core\Shared'
+
+Write-Host $rootDirectory
+
+$sourcePath = Join-Path -Path $rootDirectory -ChildPath 'src\Shared'
 $destinationPath = Join-Path -Path $rootDirectory -ChildPath 'src\Shared'
 
 $excludes = @('bin', 'obj')

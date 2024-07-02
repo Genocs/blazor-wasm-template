@@ -41,7 +41,7 @@ public partial class Tenants
                 new(tenant => tenant.Id, L["Id"]),
                 new(tenant => tenant.Name, L["Name"]),
                 new(tenant => tenant.AdminEmail, L["Admin Email"]),
-                new(tenant => tenant.ValidUpto.ToString("MMM dd, yyyy"), L["Valid Upto"]),
+                new(tenant => tenant.ValidUpTo.ToString("MMM dd, yyyy"), L["Valid Upto"]),
                 new(tenant => tenant.IsActive, L["Active"], Type: typeof(bool))
             },
             loadDataFunc: async () => _tenants = (await TenantsClient.GetListAsync()).Adapt<List<TenantDetail>>(),
@@ -77,7 +77,7 @@ public partial class Tenants
                 new UpgradeSubscriptionRequest
                 {
                     TenantId = tenant.Id,
-                    ExtendedExpiryDate = tenant.ValidUpto
+                    ExtendedExpiryDate = tenant.ValidUpTo
                 }
             }
         };

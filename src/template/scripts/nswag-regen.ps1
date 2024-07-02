@@ -2,8 +2,8 @@
 
 $currentDirectory = Get-Location
 $rootDirectory = git rev-parse --show-toplevel
-$hostDirectory = Join-Path -Path $rootDirectory -ChildPath 'src/Host'
-$infrastructurePrj = Join-Path -Path $rootDirectory -ChildPath 'src/Client.Infrastructure/Client.Infrastructure.csproj'
+$hostDirectory = Join-Path -Path $rootDirectory -ChildPath 'src\Host'
+$infrastructurePrj = Join-Path -Path $rootDirectory -ChildPath 'src\Client.Infrastructure\Client.Infrastructure.csproj'
 
 Write-Host "Make sure you have run the Genocs.WebApi project. `n"
 Write-Host "Press any key to continue... `n"
