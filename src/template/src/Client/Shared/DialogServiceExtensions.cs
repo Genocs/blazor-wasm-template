@@ -12,7 +12,7 @@ public static class DialogServiceExtensions
     public static IDialogReference ShowModal<TDialog>(this IDialogService dialogService, DialogParameters parameters)
         where TDialog : ComponentBase
     {
-        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, DisableBackdropClick = true };
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Medium, FullWidth = true, BackdropClick = true };
 
         return dialogService.Show<TDialog>(string.Empty, parameters, options);
     }

@@ -71,14 +71,14 @@
                                     <tr class="mud-table-row">
                                         @if (string.IsNullOrEmpty(context.ConnectionString?.Trim()))
                                         {
-                                            <MudChip Label="true" Color="Color.Secondary">@L["Shared Database"]</MudChip>
+                                            <MudChip T="string" Label="true" Color="Color.Secondary">@L["Shared Database"]</MudChip>
                                         }
                                         else
                                         {
                                             <td>@L["Connection String"]</td>
                                             <td>
                                                 <MudItem>
-                                                    <MudChip Label="true" Color="Color.Primary">@context.ConnectionString?.Trim()</MudChip>
+                                                    <MudChip T="string" Label="true" Color="Color.Primary">@context.ConnectionString?.Trim()</MudChip>
                                                 </MudItem>
                                             </td>
                                         }
@@ -89,7 +89,7 @@
                                             <td>@L["Issuer"]</td>
                                             <td>
                                                 <MudItem>
-                                                    <MudChip Label="true" Color="Color.Primary">
+                                                    <MudChip T="string" Label="true" Color="Color.Primary">
                                                         @context.Issuer?.Trim()
                                                     </MudChip>
                                                 </MudItem>

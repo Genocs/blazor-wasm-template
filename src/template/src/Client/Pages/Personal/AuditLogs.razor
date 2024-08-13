@@ -7,13 +7,13 @@
 <EntityTable TEntity="RelatedAuditTrail" TId="Guid" TRequest="object" Context="@Context" @bind-SearchString="_searchString">
 
     <AdvancedSearchContent>
-        <MudSwitch @bind-Checked="@_searchInOldValues" Color="Color.Primary" Style="margin-left: 5px;">@L["Search in Old Values"]</MudSwitch>
-        <MudSwitch @bind-Checked="@_searchInNewValues" Color="Color.Primary" Style="margin-left: 5px;">@L["Search in New Values"]</MudSwitch>
+        <MudSwitch @bind-Value="@_searchInOldValues" Color="Color.Primary" Style="margin-left: 5px;">@L["Search in Old Values"]</MudSwitch>
+        <MudSwitch @bind-Value="@_searchInNewValues" Color="Color.Primary" Style="margin-left: 5px;">@L["Search in New Values"]</MudSwitch>
         <MudDateRangePicker @ref="_dateRangePicker" PickerVariant="PickerVariant.Dialog" Label="@L["Date Range For Searching"]" @bind-DateRange="_dateRange">
             <PickerActions>
-                <MudButton Class="mr-auto align-self-start" OnClick="@(() => _dateRangePicker.Clear())">@L["Clear"]</MudButton>
-                <MudButton OnClick="@(() => _dateRangePicker.Close(false))">@L["Cancel"]</MudButton>
-                <MudButton Color="Color.Primary" OnClick="@(() => _dateRangePicker.Close())">@L["Ok"]</MudButton>
+                <MudButton Class="mr-auto align-self-start" OnClick="@(() => _dateRangePicker.ClearAsync())">@L["Clear"]</MudButton>
+                <MudButton OnClick="@(() => _dateRangePicker.CloseAsync(false))">@L["Cancel"]</MudButton>
+                <MudButton Color="Color.Primary" OnClick="@(() => _dateRangePicker.CloseAsync())">@L["Ok"]</MudButton>
             </PickerActions>
         </MudDateRangePicker>
     </AdvancedSearchContent>
@@ -45,7 +45,7 @@
                                                 <MudItem>
                                                     @foreach (var column in context.AffectedColumns.Trim('[').Trim(']').Split(','))
                                                     {
-                                                        <MudChip Label="true" Color="Color.Surface">@column.Replace('"', ' ').Trim()</MudChip>
+                                                        <MudChip T="string" Label="true" Color="Color.Surface">@column.Replace('"', ' ').Trim()</MudChip>
                                                     }
                                                 </MudItem>
                                             </td>
@@ -55,7 +55,7 @@
                                         <td>@L["Primary Key"]</td>
                                         <td>
                                             <MudItem>
-                                                <MudChip Label="true" Color="Color.Surface">@context.PrimaryKey?.Trim('{').Trim('}').Replace('"', ' ').Trim()</MudChip>
+                                                <MudChip T="string" Label="true" Color="Color.Surface">@context.PrimaryKey?.Trim('{').Trim('}').Replace('"', ' ').Trim()</MudChip>
                                             </MudItem>
                                         </td>
                                     </tr>
@@ -64,19 +64,18 @@
                                         <tr class="mud-table-row">
                                             <td>@L["Old Values"]</td>
                                             <td>
-
                                                 <MudItem>
                                                     @foreach (var value in context.OldValues.Trim('{').Trim('}').Split(','))
                                                     {
                                                         @if (_searchInOldValues)
                                                         {
-                                                            <MudChip Label="true" Color="Color.Warning">
+                                                            <MudChip T="string" Label="true" Color="Color.Warning">
                                                                 <MudHighlighter Text="@value.Replace('"', ' ').Trim()" HighlightedText="@_searchString" />
                                                             </MudChip>
                                                         }
                                                         else
                                                         {
-                                                            <MudChip Label="true" Color="Color.Warning">@value.Replace('"', ' ').Trim()</MudChip>
+                                                            <MudChip T="string" Label="true" Color="Color.Warning">@value.Replace('"', ' ').Trim()</MudChip>
                                                         }
                                                     }
                                                 </MudItem>
@@ -94,13 +93,13 @@
                                                     {
                                                         @if (_searchInNewValues)
                                                         {
-                                                            <MudChip Label="true" Color="Color.Success">
+                                                            <MudChip T="string" Label="true" Color="Color.Success">
                                                                 <MudHighlighter Text="@value.Replace('"', ' ').Trim()" HighlightedText="@_searchString" />
                                                             </MudChip>
                                                         }
                                                         else
                                                         {
-                                                            <MudChip Label="true" Color="Color.Success">@value.Replace('"', ' ').Trim()</MudChip>
+                                                            <MudChip T="string" Label="true" Color="Color.Success">@value.Replace('"', ' ').Trim()</MudChip>
                                                         }
                                                     }
                                                 </MudItem>
@@ -122,10 +121,10 @@
     private RenderFragment<RelatedAuditTrail> DateFieldTemplate => trail => __builder =>
     {
         <MudItem>
-            <MudChip Icon="@Icons.Material.Filled.Watch" IconColor="Color.Secondary" Label="true" Color="Color.Surface">@L["Local"] : @trail.LocalTime.ToString("G")</MudChip>
+            <MudChip T="string" Icon="@Icons.Material.Filled.Watch" IconColor="Color.Secondary" Label="true" Color="Color.Surface">@L["Local"] : @trail.LocalTime.ToString("G")</MudChip>
         </MudItem>
         <MudItem>
-            <MudChip Icon="@Icons.Material.Filled.Watch" IconColor="Color.Secondary" Label="true" Color="Color.Surface">@L["UTC"] : @trail.DateTime.ToString("G")</MudChip>
+            <MudChip T="string" Icon="@Icons.Material.Filled.Watch" IconColor="Color.Secondary" Label="true" Color="Color.Surface">@L["UTC"] : @trail.DateTime.ToString("G")</MudChip>
         </MudItem>
     };
 }

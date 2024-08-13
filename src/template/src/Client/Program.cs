@@ -1,11 +1,10 @@
-using System.Globalization;
 using Genocs.BlazorWasm.Template.Client;
 using Genocs.BlazorWasm.Template.Infrastructure;
 using Genocs.BlazorWasm.Template.Infrastructure.Common;
 using Genocs.BlazorWasm.Template.Infrastructure.Preferences;
-using Genocs.Template.Client;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using System.Globalization;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 

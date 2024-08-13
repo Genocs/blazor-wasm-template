@@ -1,74 +1,81 @@
 ﻿@inject IStringLocalizer<MainLayout> L
+<MudPopoverProvider />
 
 <MudAppBar Elevation="0">
     <MudTooltip Text="Toggle Drawer">
         <MudIconButton Icon="@Icons.Material.Rounded.Notes" Color="Color.Inherit" Edge="Edge.Start"
-            OnClick="@((e) => DrawerToggle())" />
+                       OnClick="@((e) => DrawerToggle())" />
     </MudTooltip>
-     <MudButton Variant="Variant.Text" DisableElevation="true" Link="/">
-            @L["genocs"]</MudButton>
+    <MudButton Variant="Variant.Text" DisableElevation="true" Link="/">
+        @L["genocs"]
+    </MudButton>
     <MudSpacer />
     <MudHidden Breakpoint="Breakpoint.MdAndUp" Invert="true">
         <MudButton DisableElevation Variant="Variant.Filled" Color="Color.Secondary"
-            Link="https://opencollective.com/genocs" Target="_blank" StartIcon="@Icons.Material.Filled.Favorite">
-            @L["Sponsor"]</MudButton>
+                   Link="https://opencollective.com/genocs" Target="_blank" StartIcon="@Icons.Material.Filled.Favorite">
+            @L["Sponsor"]
+        </MudButton>
         <MudDivider Vertical="true" FlexItem="true" DividerType="DividerType.Middle" Class="mx-4 my-5" />
         <MudTooltip Text="Support">
-             <MudMenu Icon="@Icons.Material.Filled.SupportAgent" Color="Color.Inherit" Dense="true" Direction="Direction.Right"
-                OffsetY="true">
+            <MudMenu Icon="@Icons.Material.Filled.SupportAgent" Color="Color.Inherit" Dense="true" Direction="Direction.Right"
+                     OffsetY="true">
                 <MudText Typo="Typo.body2" Class="px-4 py-2"><b>@L["Community"]</b></MudText>
-                 <MudMenuItem Link="https://discord.gg/fWwArnkV" Target="_blank">@L["Discord"]</MudMenuItem>
-                <MudMenuItem Link="https://www.facebook.com/genocs" Target="_blank">@L["Facebook"]
+                <MudMenuItem Link="https://discord.gg/fWwArnkV" Target="_blank">@L["Discord"]</MudMenuItem>
+                <MudMenuItem Link="https://www.facebook.com/genocs" Target="_blank">
+                    @L["Facebook"]
                 </MudMenuItem>
-                 <MudMenuItem Link="https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/" Target="_blank">LinkedIn</MudMenuItem>
-                <MudMenuItem Link="https://www.buymeacoffee.com/genocs" Target="_blank">Buy Me a Coffee!
+                <MudMenuItem Link="https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/" Target="_blank">LinkedIn</MudMenuItem>
+                <MudMenuItem Link="https://www.buymeacoffee.com/genocs" Target="_blank">
+                    Buy Me a Coffee!
                 </MudMenuItem>
-                 <MudMenuItem Link="https://opencollective.com/genocs" Target="_blank">
-                     Open Collective
+                <MudMenuItem Link="https://opencollective.com/genocs" Target="_blank">
+                    Open Collective
                 </MudMenuItem>
                 <MudText Typo="Typo.body2" Class="px-4 py-2"><b>@L["Resources"]</b></MudText>
-                 <MudMenuItem Link="https://genocs-blog.netlify.app/" Target="_blank">
-                     @L["Documentation"]
+                <MudMenuItem Link="https://genocs-blog.netlify.app/" Target="_blank">
+                    @L["Documentation"]
                 </MudMenuItem>
             </MudMenu>
         </MudTooltip>
         <LanguageSelector />
         <MudTooltip Text="Fork Repository">
             <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit"
-                            Link="https://github.com/Genocs/genocs-library" Target="_blank" />
+                           Link="https://github.com/Genocs/genocs-library" Target="_blank" />
         </MudTooltip>
         <NotificationConnectionStatus></NotificationConnectionStatus>
     </MudHidden>
     <MudHidden Breakpoint="Breakpoint.SmAndDown" Invert="true">
         <MudTooltip Text="Sponsor">
             <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Inherit"
-                            Link="https://opencollective.com/genocs" Target="_blank" />
+                           Link="https://opencollective.com/genocs" Target="_blank" />
         </MudTooltip>
-         <MudMenu Icon="@Icons.Material.Filled.Settings" Color="Color.Inherit" Dense="true" Direction="Direction.Right"
-            OffsetY="true">
+        <MudMenu Icon="@Icons.Material.Filled.Settings" Color="Color.Inherit" Dense="true" Direction="Direction.Right"
+                 OffsetY="true">
             <div class="px-2">
                 <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit"
-                    Link="https://github.com/Genocs/genocs-library" Target="_blank" />
+                               Link="https://github.com/Genocs/genocs-library" Target="_blank" />
                 <MudIconButton Icon="@Icons.Material.Filled.Coffee" Color="Color.Inherit"
-                    Link="https://www.buymeacoffee.com/genocs" Target="_blank" />
+                               Link="https://www.buymeacoffee.com/genocs" Target="_blank" />
             </div>
             <MudText Typo="Typo.body2" Class="px-4 py-2"><b>@L["Community"]</b></MudText>
-             <MudMenuItem Link="https://discord.gg/fWwArnkV" Target="_blank">@L["Discord"]</MudMenuItem>
-             <MudMenuItem Link="https://www.facebook.com/genocs" Target="_blank">
-                 @L["Facebook"]
+            <MudMenuItem Link="https://discord.gg/fWwArnkV" Target="_blank">@L["Discord"]</MudMenuItem>
+            <MudMenuItem Link="https://www.facebook.com/genocs" Target="_blank">
+                @L["Facebook"]
             </MudMenuItem>
-             <MudMenuItem Link="https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/" Target="_blank">LinkedIn</MudMenuItem>
+            <MudMenuItem Link="https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/" Target="_blank">LinkedIn</MudMenuItem>
             <MudText Typo="Typo.body2" Class="px-4 py-2"><b>@L["Resources"]</b></MudText>
             <MudMenuItem Link="https://mudblazor.com/getting-started/installation" Target="_blank">
-                @L["MudBlazor Documentation"]</MudMenuItem>
-             <MudMenuItem Link="https://genocs-blog.netlify.app/getting-started/" Target="_blank">
-                @L["Quick-Start Guide"]</MudMenuItem>
+                @L["MudBlazor Documentation"]
+            </MudMenuItem>
+            <MudMenuItem Link="https://genocs-blog.netlify.app/getting-started/" Target="_blank">
+                @L["Quick-Start Guide"]
+            </MudMenuItem>
         </MudMenu>
         <NotificationConnectionStatus></NotificationConnectionStatus>
     </MudHidden>
     <MudMenu AnchorOrigin="Origin.BottomRight" LockScroll="true" TransformOrigin="Origin.TopRight">
         <ActivatorContent>
-             <MudIconButton Icon="@Icons.Material.Filled.Person" Color="Color.Inherit" />
+            <MudIconButton Icon="@Icons.Material.Filled.Person" Color="Color.Inherit" />
         </ActivatorContent>
         <ChildContent>
             <div class="py-2" style="min-width: 220px">
@@ -87,7 +94,7 @@
                 </MudMenuItem>
                 <div class="mt-4 mx-4">
                     <MudButton Color="Color.Error" FullWidth="true" StartIcon="@Icons.Material.Filled.Logout"
-                        Variant="Variant.Filled" OnClick="Logout">
+                               Variant="Variant.Filled" OnClick="Logout">
                         Logout
                     </MudButton>
                 </div>

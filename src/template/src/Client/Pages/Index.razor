@@ -24,13 +24,13 @@
             </MudText>
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
-           <div class="mud-typography-align-center">
+            <div class="mud-typography-align-center">
                 <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="https://genocs-blog.netlify.app/blazor-template/general/getting-started//" Target="_blank" StartIcon="@Icons.Material.Filled.Rocket">@L["Get Started"]</MudButton>
                 <MudButton Variant="Variant.Outlined" Style="margin-left:5px" Color="Color.Default" Href="https://github.com/Genocs/genocs-library" Target="_blank" StartIcon="@Icons.Custom.Brands.GitHub">@L["Star on GitHub"]</MudButton>
             </div>
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
-             <MudText Align="Align.Center">@L["Version 6.0"]</MudText>
+            <MudText Align="Align.Center">@L["Version 6.0"]</MudText>
         </MudItem>
         <MudItem xs="12" sm="12" md="12">
             <MudExpansionPanels>
@@ -39,14 +39,14 @@
                     <MudButton Variant="Variant.Text" DisableElevation="true" Color="Color.Secondary" Link="https://genocs-blog.netlify.app/general/getting-started" Target="_blank">@L["Read The Guide"]</MudButton>
                 </MudExpansionPanel>
                 <MudExpansionPanel Class="mud-elevation-25" Text="@L["Important Links"]" MaxHeight="500">
-                    <MudList Clickable="true">
+                    <MudList T="string" Clickable="true">
                         <MudListItem Text="@L["Github Repository : Do Not Forget to Leave a Star ;)"]" Href="https://github.com/Genocs/genocs-library" />
                         <MudListItem Text="@L["Quick Start Guide"]" Href="https://genocs-blog.netlify.app/blazor-template/general/getting-started" />
                     </MudList>
                 </MudExpansionPanel>
                 <MudExpansionPanel Class="mud-elevation-25" Text="@L["Learning Resources"]" MaxHeight="1000">
                     @L["Here are few articles that should help you get started with Blazor."]
-                    <MudList Clickable="true">
+                    <MudList T="string" Clickable="true">
                         <MudListItem Text="@L["Blazor For Beginners – Getting Started With Blazor"]" Href="https://genocs-blog.netlify.app/blog/getting-started-with-blazor/" />
                         <MudListItem Text="@L["Exploring Blazor Project Structure"]" Href="https://genocs-blog.netlify.app/blog/exploring-blazor-project-structure/" />
                         <MudListItem Text="@L["Onion Architecture In ASP.NET Core With CQRS – Detailed"]" Href="https://genocs-blog.netlify.app/blog/onion-architecture-in-aspnet-core/" />
@@ -56,9 +56,9 @@
                         <MudListItem Text="@L["Building A Chat Application With Blazor, Identity, And SignalR"]" Href="https://genocs-blog.netlify.app/blog/realtime-chat-application-with-blazor/" />
                     </MudList>
                 </MudExpansionPanel>
-                 <MudExpansionPanel Class="mud-elevation-25" Text="@L["User Claims"]">
+                <MudExpansionPanel Class="mud-elevation-25" Text="@L["User Claims"]">
                     @L["Application Claims of the currently logged in user."]
-                     <MudList Dense="true">
+                    <MudList T="string" Dense="true">
                         @if (Claims is not null)
                         {
                             @foreach (var claim in Claims)
@@ -71,11 +71,11 @@
                                 </MudListItem>
                             }
                         }
-            </MudList>
+                    </MudList>
                 </MudExpansionPanel>
             </MudExpansionPanels>
         </MudItem>
-        <MudItem  xs="12" sm="12" md="12">
+        <MudItem xs="12" sm="12" md="12">
             <MudAlert Style="margin-top:10px;justify-content:center" Severity="Severity.Info"><MudLink Href="https://github.com/Genocs/blazor-template">@L["Liked this Template? Star us on GitHub!"]</MudLink></MudAlert>
         </MudItem>
     </MudGrid>

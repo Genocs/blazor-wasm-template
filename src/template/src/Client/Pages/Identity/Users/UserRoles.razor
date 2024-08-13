@@ -59,7 +59,7 @@ else
                 <MudHighlighter Text="@context.Description" HighlightedText="@_searchString" />
             </MudTd>
             <MudTd DataLabel="Role">
-                <MudCheckBox @bind-Checked="@context.Enabled" Disabled="@(!_canEditUsers)" Color="Color.Secondary">
+                <MudCheckBox @bind-Value="@context.Enabled" Disabled="@(!_canEditUsers)" Color="Color.Secondary">
                 </MudCheckBox>
             </MudTd>
         </RowTemplate>

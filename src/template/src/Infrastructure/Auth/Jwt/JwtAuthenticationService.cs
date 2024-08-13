@@ -216,7 +216,7 @@ public class JwtAuthenticationService : AuthenticationStateProvider, IAuthentica
     private byte[] ParseBase64WithoutPadding(string payload)
     {
         payload = payload.Trim().Replace('-', '+').Replace('_', '/');
-        string base64 = payload.PadRight(payload.Length + (4 - payload.Length % 4) % 4, '=');
+        string base64 = payload.PadRight(payload.Length + ((4 - (payload.Length % 4)) % 4), '=');
         return Convert.FromBase64String(base64);
     }
 }

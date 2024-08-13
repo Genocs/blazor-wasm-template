@@ -47,7 +47,7 @@ public class BrandAutocomplete : MudAutocomplete<DefaultIdType>
         }
     }
 
-    private async Task<IEnumerable<DefaultIdType>> SearchBrands(string value)
+    private async Task<IEnumerable<DefaultIdType>> SearchBrands(string value, CancellationToken cancellationToken)
     {
         var filter = new SearchBrandsRequest
         {
