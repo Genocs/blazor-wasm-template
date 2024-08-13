@@ -2,9 +2,9 @@
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Nodes;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
+using Genocs.BlazorWasm.Template.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Infrastructure.Notifications;
 using Genocs.BlazorWasm.Template.Shared.Notifications;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;

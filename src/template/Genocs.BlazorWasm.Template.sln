@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "src\Client\Client
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{0D7A7E2D-CCF4-496E-9F2B-141712F4C00F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.Infrastructure", "src\Client.Infrastructure\Client.Infrastructure.csproj", "{28E5DFC7-A05B-40DB-9E35-AC1E84C008A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{28E5DFC7-A05B-40DB-9E35-AC1E84C008A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{F6BE3160-F6ED-4E11-A33F-063DD9186D84}"
 	ProjectSection(SolutionItems) = preProject

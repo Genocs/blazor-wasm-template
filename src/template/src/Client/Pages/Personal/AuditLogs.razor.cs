@@ -1,5 +1,5 @@
 using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Infrastructure.ApiClient;
 using Mapster;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;

@@ -1,4 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.Auth;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 

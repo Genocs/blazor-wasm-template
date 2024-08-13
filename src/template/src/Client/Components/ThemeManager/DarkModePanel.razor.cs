@@ -1,4 +1,4 @@
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
+using Genocs.BlazorWasm.Template.Infrastructure.Preferences;
 using Microsoft.AspNetCore.Components;
 
 namespace Genocs.BlazorWasm.Template.Client.Components.ThemeManager;

@@ -1,4 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.Common;
 using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;

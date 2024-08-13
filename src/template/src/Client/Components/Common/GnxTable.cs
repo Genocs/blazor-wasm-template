@@ -1,5 +1,5 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Preferences;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.Notifications;
+using Genocs.BlazorWasm.Template.Infrastructure.Preferences;
 using MediatR.Courier;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;

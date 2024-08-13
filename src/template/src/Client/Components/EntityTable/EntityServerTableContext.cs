@@ -1,4 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.ApiClient;
 
 namespace Genocs.BlazorWasm.Template.Client.Components.EntityTable;
 

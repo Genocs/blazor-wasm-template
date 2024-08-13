@@ -10,7 +10,7 @@ WORKDIR /src
 COPY ["src/Host", "Host/"]
 COPY ["src/Shared", "Shared/"]
 COPY ["src/Client", "Client/"]
-COPY ["src/Client.Infrastructure", "Client.Infrastructure/"]
+COPY ["src/Infrastructure", "Infrastructure/"]
 
 COPY ["Directory.Build.props", "Directory.Build.props"]
 COPY ["Directory.Build.targets", "Directory.Build.targets"]

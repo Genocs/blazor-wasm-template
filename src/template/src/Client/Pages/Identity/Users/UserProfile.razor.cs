@@ -1,6 +1,6 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Auth;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Infrastructure.Auth;
+using Genocs.BlazorWasm.Template.Infrastructure.Common;
 using Genocs.BlazorWasm.Template.Client.Shared;
 using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;

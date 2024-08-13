@@ -1,6 +1,6 @@
 ﻿using Genocs.BlazorWasm.Template.Client.Components.EntityTable;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Common;
+using Genocs.BlazorWasm.Template.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Infrastructure.Common;
 using Genocs.BlazorWasm.Template.Shared.Authorization;
 using Mapster;
 using Microsoft.AspNetCore.Components;

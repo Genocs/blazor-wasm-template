@@ -1,4 +1,4 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.ApiClient;
 using Genocs.BlazorWasm.Template.Client.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;

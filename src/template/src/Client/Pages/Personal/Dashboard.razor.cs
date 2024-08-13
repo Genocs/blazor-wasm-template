@@ -1,5 +1,5 @@
-﻿using Genocs.BlazorWasm.Template.Client.Infrastructure.ApiClient;
-using Genocs.BlazorWasm.Template.Client.Infrastructure.Notifications;
+﻿using Genocs.BlazorWasm.Template.Infrastructure.ApiClient;
+using Genocs.BlazorWasm.Template.Infrastructure.Notifications;
 using Genocs.BlazorWasm.Template.Client.Shared;
 using Genocs.BlazorWasm.Template.Shared.Notifications;
 using MediatR.Courier;
