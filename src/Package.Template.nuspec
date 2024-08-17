@@ -18,7 +18,7 @@
 		<packageTypes>
 			<packageType name="Template" />
 		</packageTypes>
-		<tags>cleanarchitecture clean architecture blazor genocs solution csharp wasm webassembly mudblazor</tags>
+		<tags>blazor genocs solution csharp wasm webassembly mudblazor</tags>
 	</metadata>
 
 	<files>
