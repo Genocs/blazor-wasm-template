@@ -2,9 +2,9 @@
 
     <PropertyGroup>
         <TargetFrameworks>net8.0</TargetFrameworks>
-        <IsPackable>false</IsPackable>
         <RootNamespace>Genocs.BlazorWasm.Template.Infrastructure</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Infrastructure</AssemblyName>
+        <IsPackable>false</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
