@@ -36,7 +36,7 @@ Write-Host "and then copy over the whole project from the webapi repository ($($
 Write-Host
 Read-Host -Prompt "Press ENTER to continue"
 
-Remove-Item -Path "$destinationPath"  -Recurse -Force
+Remove-Item -Path "$destinationPath" -Recurse -Force
 Copy-Item -Path (Get-Item -Path "$sourcePath" -Exclude $excludes).FullName -Destination "$destinationPath" -Recurse -Force
 
 Write-Host "Changes have been pulled."

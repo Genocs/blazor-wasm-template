@@ -89,7 +89,7 @@ dotnet new --install Genocs.BlazorWasm.Template
 or, if you want to use a specific version of the template, use
 
 ```bash
-dotnet new --install Genocs.BlazorWasm.Template::1.2.0
+dotnet new --install Genocs.BlazorWasm.Template::2.2.0
 ```
 
 This would install the `Genocs Blazor WebAssembly Template` globally on your machine. Do note that, at the time of writing this documentation, the latest available version is **1.2.0** which is also one of the first stable release version of the package. It is highly likely that there is already a newer version available when you are reading this.
