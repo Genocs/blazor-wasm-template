@@ -20,7 +20,7 @@ public partial class RadiusPanel
         Radius = themePreference.BorderRadius;
     }
 
-    private async Task ChangedSelection(ChangeEventArgs args)
+    private async Task ChangedSelectionAsync(ChangeEventArgs args)
     {
         Radius = int.Parse(args?.Value?.ToString() ?? "0");
         await OnSliderChanged.InvokeAsync(Radius);

@@ -48,28 +48,28 @@ public partial class TableCustomizationPanel
     [Parameter]
     public EventCallback<bool> OnHoverableSwitchToggled { get; set; }
 
-    private async Task ToggleDenseSwitch()
+    private async Task ToggleDenseSwitchAsync()
     {
         _tablePreference.IsDense = !_tablePreference.IsDense;
         await OnDenseSwitchToggled.InvokeAsync(_tablePreference.IsDense);
         await Notifications.PublishAsync(_tablePreference);
     }
 
-    private async Task ToggleStripedSwitch()
+    private async Task ToggleStripedSwitchAsync()
     {
         _tablePreference.IsStriped = !_tablePreference.IsStriped;
         await OnStripedSwitchToggled.InvokeAsync(_tablePreference.IsStriped);
         await Notifications.PublishAsync(_tablePreference);
     }
 
-    private async Task ToggleBorderedSwitch()
+    private async Task ToggleBorderedSwitchAsync()
     {
         _tablePreference.HasBorder = !_tablePreference.HasBorder;
         await OnBorderdedSwitchToggled.InvokeAsync(_tablePreference.HasBorder);
         await Notifications.PublishAsync(_tablePreference);
     }
 
-    private async Task ToggleHoverableSwitch()
+    private async Task ToggleHoverableSwitchAsync()
     {
         _tablePreference.IsHoverable = !_tablePreference.IsHoverable;
         await OnHoverableSwitchToggled.InvokeAsync(_tablePreference.IsHoverable);

@@ -9,12 +9,12 @@
         </div>
     </TitleContent>
     <ChildContent>
-        <MudSwitch T="bool" Label="Dense" Color="Color.Info" @oninput="@ToggleDenseSwitch" @bind-Value="@IsDense" />
-        <MudSwitch T=" bool" Label="Striped" Color="Color.Info" @oninput="@ToggleStripedSwitch"
+        <MudSwitch T="bool" Label="Dense" Color="Color.Info" @oninput="@ToggleDenseSwitchAsync" @bind-Value="@IsDense" />
+        <MudSwitch T=" bool" Label="Striped" Color="Color.Info" @oninput="@ToggleStripedSwitchAsync"
                    @bind-Value="@IsStriped" />
-        <MudSwitch T="bool" Label="Bordered" Color="Color.Info" @oninput="@ToggleBorderedSwitch"
+        <MudSwitch T="bool" Label="Bordered" Color="Color.Info" @oninput="@ToggleBorderedSwitchAsync"
                    @bind-Value="@HasBorder" />
-        <MudSwitch T="bool" Label="Hoverable" Color="Color.Info" @oninput="@ToggleHoverableSwitch"
+        <MudSwitch T="bool" Label="Hoverable" Color="Color.Info" @oninput="@ToggleHoverableSwitchAsync"
                    @bind-Value="@IsHoverable" />
     </ChildContent>
 </MudExpansionPanel>

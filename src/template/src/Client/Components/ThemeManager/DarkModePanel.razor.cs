@@ -16,7 +16,7 @@ public partial class DarkModePanel
     [Parameter]
     public EventCallback<bool> OnIconClicked { get; set; }
 
-    private async Task ToggleDarkMode()
+    private async Task ToggleDarkModeAsync()
     {
         _isDarkMode = !_isDarkMode;
         await OnIconClicked.InvokeAsync(_isDarkMode);

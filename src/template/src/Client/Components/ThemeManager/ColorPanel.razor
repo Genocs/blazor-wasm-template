@@ -12,7 +12,7 @@
                 <MudGrid Spacing="0">
                     @foreach (var color in Colors)
                     {
-                        <MudButton OnClick="@(() => ColorClicked(color))"
+                        <MudButton OnClick="@(() => Async(color))"
                                    style="padding:0px!important;border-radius:0px!important">
                             <ChildContent>
                                 <div style="@($"background: {color};"); width: 65px; height: 65px">
