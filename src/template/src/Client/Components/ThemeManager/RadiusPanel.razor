@@ -10,7 +10,7 @@
     </TitleContent>
     <ChildContent>
         <MudSlider @bind-Value="@Radius" Min="0" Max="@MaxValue" Immediate="false" Step="1" Color="Color.Primary"
-                   @oninput="@((e) => ChangedSelection(e))">
+                   @oninput="@((e) => ChangedSelectionAsync(e))">
             @Radius.ToString()
         </MudSlider>
     </ChildContent>

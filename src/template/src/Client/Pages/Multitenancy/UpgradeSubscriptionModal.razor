@@ -12,10 +12,10 @@
         <DialogContent>
             <MudGrid>
                 <MudItem xs="12" md="6">
-                    <MudTextField For="@(() => Request.TenantId)" @bind-Value="Request.TenantId" ReadOnly DisableUnderLine Label="@L["Tenant Id"]" />
+                    <MudTextField For="@(() => Request.TenantId)" @bind-Value="Request.TenantId" ReadOnly Label="@L["Tenant Id"]" />
                 </MudItem>
                 <MudItem xs="12" md="6">
-                    <MudTextField Value="Request.ExtendedExpiryDate.ToLongDateString()" ReadOnly DisableUnderLine Label="@L["Current Expiry Date"]" />
+                    <MudTextField Value="Request.ExtendedExpiryDate.ToLongDateString()" ReadOnly Label="@L["Current Expiry Date"]" />
                 </MudItem>
                 <MudItem xs="12" md="12">
                     <MudDatePicker Color="Color.Secondary" Label="@L["New Expiry Date"]" DateFormat="dddd, MMM dd, yyyy" @bind-Date="date" />
@@ -23,8 +23,8 @@
             </MudGrid>
         </DialogContent>
         <DialogActions>
-            <MudButton DisableElevation=true Variant="Variant.Filled" OnClick="Cancel">@L["Cancel"]</MudButton>
-            <MudButton DisableElevation=true Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Secondary">@L["Upgrade"]</MudButton>
+            <MudButton Variant="Variant.Filled" OnClick="Cancel">@L["Cancel"]</MudButton>
+            <MudButton Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Secondary">@L["Upgrade"]</MudButton>
         </DialogActions>
     </MudDialog>
 </EditForm>

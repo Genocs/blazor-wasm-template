@@ -17,7 +17,7 @@ public partial class ColorPanel
     [Parameter]
     public EventCallback<string> OnColorClicked { get; set; }
 
-    protected async Task ColorClicked(string color)
+    protected async Task Async(string color)
     {
         await OnColorClicked.InvokeAsync(color);
     }

@@ -1,8 +1,8 @@
 ﻿@inject IStringLocalizer<LanguageSelector> L
 
 <MudTooltip Text="@CurrentLanguage">
-    <MudMenu Icon="@Icons.Material.Outlined.Translate" Color="Color.Inherit" AnchorOrigin="Origin.BottomLeft" OffsetY="true"
-        Dense="true">
+    <MudMenu Icon="@Icons.Material.Outlined.Translate" Color="Color.Inherit" AnchorOrigin="Origin.BottomLeft"
+             Dense="true">
         @foreach (var language in LocalizationConstants.SupportedLanguages)
         {
             if (language.Code == CurrentLanguage)
