@@ -9,7 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
-        <PackageReference Include="MediatR" Version="12.4.0" />
+        <PackageReference Include="MediatR" Version="12.4.1" />
         <PackageReference Include="MediatR.Courier" Version="6.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.8" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.8" />
@@ -18,7 +18,7 @@
         <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
         <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
         <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.8" />
-        <PackageReference Include="MudBlazor" Version="7.6.0" />
+        <PackageReference Include="MudBlazor" Version="7.8.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="NSwag.MSBuild" Version="14.1.0">
             <PrivateAssets>all</PrivateAssets>

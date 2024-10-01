@@ -1,17 +1,16 @@
 ﻿@inject IStringLocalizer<MainLayout> L
-<MudPopoverProvider />
 
 <MudAppBar Elevation="0">
     <MudTooltip Text="Toggle Drawer">
         <MudIconButton Icon="@Icons.Material.Rounded.Notes" Color="Color.Inherit" Edge="Edge.Start"
                        OnClick="@((e) => DrawerToggle())" />
     </MudTooltip>
-    <MudButton Variant="Variant.Text" DisableElevation="true" Link="/">
+    <MudButton Variant="Variant.Text" Link="/">
         @L["genocs"]
     </MudButton>
     <MudSpacer />
     <MudHidden Breakpoint="Breakpoint.MdAndUp" Invert="true">
-        <MudButton DisableElevation Variant="Variant.Filled" Color="Color.Secondary"
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary"
                    Link="https://opencollective.com/genocs" Target="_blank" StartIcon="@Icons.Material.Filled.Favorite">
             @L["Sponsor"]
         </MudButton>
