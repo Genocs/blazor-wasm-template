@@ -97,12 +97,12 @@ This would install the `Genocs Blazor WebAssembly Template` globally on your mac
 > *To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.BlazorWasm.Template/)*
 >
 
-**Genocs.BlazorWasm.Template::1.2.0 is compatible only with Genocs.Microservice.Template::2.0.0 and above.**
+**Genocs.BlazorWasm.Template::2.2.0 is compatible only with Genocs.Microservice.Template::2.0.0 and above.**
 
 Get the .NET WebApi Microservice Template by running the following command
 
 ```
-dotnet new --install Genocs.Microservice.Template::1.2.0
+dotnet new --install Genocs.Microservice.Template::2.0.0
 ```
 
 For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/blazor-wasm-template/general/overview/)
