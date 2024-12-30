@@ -17,7 +17,7 @@
 [license-url]: https://github.com/Genocs/blazor-wasm-template/blob/main/LICENSE
 [build-shield]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml/badge.svg?branch=main
 [build-url]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml
-[package-shield]: https://img.shields.io/badge/nuget-v.2.3.0-blue?&label=latests&logo=nuget
+[package-shield]: https://img.shields.io/badge/nuget-v.2.3.1-blue?&label=latests&logo=nuget
 [package-url]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml
 [downloads-shield]: https://img.shields.io/nuget/dt/Genocs.Microservice.Template.svg?color=2da44e&label=downloads&logo=nuget
 [downloads-url]: https://www.nuget.org/packages/Genocs.Microservice.Template
@@ -71,7 +71,7 @@ dotnet new --install Genocs.BlazorWasm.Template
 
 This would install the `Genocs Blazor WebAssembly Template` globally on your machine.
 
-**Genocs.BlazorWasm.Template::2.3.0 is compatible only with Genocs.Microservice.Template::2.3.0 and above.**
+**Genocs.BlazorWasm.Template::2.3.1 is compatible only with Genocs.Microservice.Template::2.3.0 and above.**
 
 Get the .NET WebApi Microservice Template by running the following command
 

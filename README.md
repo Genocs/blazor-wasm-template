@@ -17,7 +17,7 @@
 [license-url]: https://github.com/Genocs/blazor-wasm-template/blob/main/LICENSE
 [build-shield]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml/badge.svg?branch=main
 [build-url]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml
-[package-shield]: https://img.shields.io/badge/nuget-v.2.3.0-blue?&label=latests&logo=nuget
+[package-shield]: https://img.shields.io/badge/nuget-v.2.3.1-blue?&label=latests&logo=nuget
 [package-url]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml
 [downloads-shield]: https://img.shields.io/nuget/dt/Genocs.Microservice.Template.svg?color=2da44e&label=downloads&logo=nuget
 [downloads-url]: https://www.nuget.org/packages/Genocs.Microservice.Template
@@ -89,7 +89,7 @@ dotnet new --install Genocs.BlazorWasm.Template
 or, if you want to use a specific version of the template, use
 
 ```bash
-dotnet new --install Genocs.BlazorWasm.Template::2.3.0
+dotnet new --install Genocs.BlazorWasm.Template::2.3.1
 ```
 
 This would install the `Genocs Blazor WebAssembly Template` globally on your machine. Do note that, at the time of writing this documentation, the latest available version is **1.2.0** which is also one of the first stable release version of the package. It is highly likely that there is already a newer version available when you are reading this.
@@ -97,7 +97,7 @@ This would install the `Genocs Blazor WebAssembly Template` globally on your mac
 > *To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.BlazorWasm.Template/)*
 >
 
-**Genocs.BlazorWasm.Template::2.3.0 is compatible only with Genocs.Microservice.Template::2.3.0 and above.**
+**Genocs.BlazorWasm.Template::2.3.1 is compatible only with Genocs.Microservice.Template::2.3.0 and above.**
 
 Get the .NET WebApi Microservice Template by running the following command
 

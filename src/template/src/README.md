@@ -17,7 +17,7 @@
 [license-url]: https://github.com/Genocs/blazor-wasm-template/blob/main/LICENSE
 [build-shield]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml/badge.svg?branch=main
 [build-url]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml
-[package-shield]: https://img.shields.io/badge/nuget-v.2.3.0-blue?&label=latests&logo=nuget
+[package-shield]: https://img.shields.io/badge/nuget-v.2.3.1-blue?&label=latests&logo=nuget
 [package-url]: https://github.com/Genocs/blazor-wasm-template/actions/workflows/build_and_test.yml
 [downloads-shield]: https://img.shields.io/nuget/dt/Genocs.Microservice.Template.svg?color=2da44e&label=downloads&logo=nuget
 [downloads-url]: https://www.nuget.org/packages/Genocs.Microservice.Template
@@ -173,10 +173,10 @@ dotnet run --project ./src/Host
 
 ``` bash
 # Build webapi
-docker build -t genocs/genocs.bazorwasm.template-portal:2.3.0 -t genocs/genocs.bazorwasm.template-portal:latest -f ./dockerfile .
+docker build -t genocs/genocs.bazorwasm.template-portal:2.3.1 -t genocs/genocs.bazorwasm.template-portal:latest -f ./dockerfile .
 
 # Push on Dockerhub
-docker push genocs/genocs.bazorwasm.template-portal:2.3.0
+docker push genocs/genocs.bazorwasm.template-portal:2.3.1
 docker push genocs/genocs.bazorwasm.template-portal:latest
 ```
 ---
