@@ -6,11 +6,7 @@ namespace Genocs.BlazorWasm.Template.Client.Shared;
 
 public static class ApiHelper
 {
-    public static async Task<T?> ExecuteCallGuardedAsync<T>(
-        Func<Task<T>> call,
-        ISnackbar snackbar,
-        CustomValidation? customValidation = null,
-        string? successMessage = null)
+    public static async Task<T?> ExecuteCallGuardedAsync<T>(Func<Task<T>> call, ISnackbar snackbar, CustomValidation? customValidation = null, string? successMessage = null)
     {
         customValidation?.ClearErrors();
         try
@@ -37,7 +33,7 @@ public static class ApiHelper
         }
         catch (ApiException<ErrorResult> ex)
         {
-            snackbar.Add(ex.Result.Exception, Severity.Error);
+            snackbar.Add(ex.Result.Exception ?? "ApiException", Severity.Error);
         }
         catch (Exception ex)
         {
@@ -47,11 +43,7 @@ public static class ApiHelper
         return default;
     }
 
-    public static async Task<bool> ExecuteCallGuardedAsync(
-        Func<Task> call,
-        ISnackbar snackbar,
-        CustomValidation? customValidation = null,
-        string? successMessage = null)
+    public static async Task<bool> ExecuteCallGuardedAsync(Func<Task> call, ISnackbar snackbar, CustomValidation? customValidation = null, string? successMessage = null)
     {
         customValidation?.ClearErrors();
         try
@@ -78,7 +70,7 @@ public static class ApiHelper
         }
         catch (ApiException<ErrorResult> ex)
         {
-            snackbar.Add(ex.Result.Exception, Severity.Error);
+            snackbar.Add(ex.Result.Exception ?? "ApiException", Severity.Error);
         }
 
         return false;

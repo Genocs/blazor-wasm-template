@@ -31,7 +31,7 @@
     </ItemGroup>
 
     <Target Name="NSwag">
-        <Exec WorkingDirectory=".\ApiClient" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=Development" Command="$(NSwagExe_Net80) run nswag.json /variables:Configuration=$(Configuration)" />
+        <Exec WorkingDirectory=".\ApiClient" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=Development" Command="$(NSwagExe_Net90) run nswag.json /variables:Configuration=$(Configuration)" />
     </Target>
 
 </Project>

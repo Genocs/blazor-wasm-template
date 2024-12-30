@@ -2,21 +2,23 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
+EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build-env
 WORKDIR /src
-COPY ["src/Host", "Host/"]
-COPY ["src/Shared", "Shared/"]
-COPY ["src/Client", "Client/"]
-COPY ["src/Infrastructure", "Infrastructure/"]
 
 COPY ["Directory.Build.props", "Directory.Build.props"]
 COPY ["Directory.Build.targets", "Directory.Build.targets"]
 COPY ["dotnet.ruleset", "dotnet.ruleset"]
 COPY ["global.json", "global.json"]
 COPY ["stylecop.json", "stylecop.json"]
+
+COPY ["src/Host", "Host/"]
+COPY ["src/Shared", "Shared/"]
+COPY ["src/Client", "Client/"]
+COPY ["src/Infrastructure", "Infrastructure/"]
+
 
 WORKDIR "/src/Host"
 
