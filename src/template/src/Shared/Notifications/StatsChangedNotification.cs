@@ -1,5 +1,3 @@
 namespace Genocs.BlazorWasm.Template.Shared.Notifications;
 
-public class StatsChangedNotification : INotificationMessage
-{
-}
+public class StatsChangedNotification : INotificationMessage;

@@ -23,7 +23,7 @@ public partial class BaseLayout
             config.Icon = Icons.Custom.Brands.GitHub;
             config.Action = "Star us on GitHub!";
             config.ActionColor = Color.Primary;
-            config.Onclick = snackbar =>
+            config.OnClick = snackbar =>
             {
                 Navigation.NavigateTo("https://github.com/Genocs/blazor-template");
                 return Task.CompletedTask;

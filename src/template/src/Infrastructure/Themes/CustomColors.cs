@@ -4,8 +4,8 @@ namespace Genocs.BlazorWasm.Template.Infrastructure.Themes;
 
 public static class CustomColors
 {
-    public static readonly List<string> ThemeColors = new()
-    {
+    public static readonly List<string> ThemeColors =
+    [
         Light.Primary,
         Colors.Blue.Default,
         Colors.BlueGray.Default,
@@ -18,7 +18,7 @@ public static class CustomColors
         Colors.Indigo.Default,
         Colors.LightBlue.Default,
         Colors.Cyan.Default,
-    };
+    ];
 
     public static class Light
     {

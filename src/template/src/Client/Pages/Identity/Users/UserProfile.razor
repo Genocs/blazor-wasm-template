@@ -44,7 +44,9 @@ else
                     <div class="d-flex justify-center mb-4">
                         @if (!string.IsNullOrEmpty(_imageUrl))
                         {
-                            <MudAvatar Square="true" MudImage="@_imageUrl" Style=" width:100%;height:auto;"> </MudAvatar>
+                            <MudAvatar Square="true" Style=" width:100%;height:auto;">
+                                <MudImage Src="@_imageUrl"></MudImage>
+                            </MudAvatar>
                         }
                         else
                         {

@@ -156,8 +156,8 @@
   <data name="How To Implement Blazor CRUD Using Entity Framework Core?" xml:space="preserve">
     <value>¿Cómo implementar un CRUD en Blazro usando Entity Framework Core?</value>
   </data>
-  <data name="Implementing Blazor CRUD Using Mudblazor Component Library In .NET 5" xml:space="preserve">
-    <value>Implementando un CRUD en Blazor usando la librería de componentes Mudblazor en .NET 5</value>
+  <data name="Implementing Blazor CRUD Using Mudblazor Component Library In .NET" xml:space="preserve">
+    <value>Implementando un CRUD en Blazor usando la librería de componentes Mudblazor en .NET 9</value>
   </data>
   <data name="Important Links" xml:space="preserve">
     <value>Links Importantes</value>

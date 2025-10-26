@@ -47,7 +47,7 @@ public partial class UserRoles
                     () => UsersClient.GetRolesAsync(user.Id.ToString()), Snackbar)
                 is ICollection<UserRoleDto> response)
             {
-                _userRolesList = response.ToList();
+                _userRolesList = [.. response];
             }
         }
 

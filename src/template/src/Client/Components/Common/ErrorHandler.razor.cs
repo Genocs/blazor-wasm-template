@@ -9,7 +9,7 @@ public partial class ErrorHandler
     [Inject]
     public IAuthenticationService AuthService { get; set; } = default!;
 
-    public List<Exception> _receivedExceptions = new();
+    public List<Exception> _receivedExceptions = [];
 
     protected override async Task OnErrorAsync(Exception exception)
     {

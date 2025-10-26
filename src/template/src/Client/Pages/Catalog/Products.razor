@@ -17,7 +17,7 @@
         @if (!Context.AddEditModal.IsCreate)
         {
             <MudItem xs="12" md="6">
-                <MudTextField Value="context.Id" ReadOnly DisableUnderLine Label="@L[$"Product Id"]" />
+                <MudTextField Value="context.Id" ReadOnly Label="@L[$"Product Id"]" />
             </MudItem>
         }
         <MudItem xs="12" md="6">
@@ -37,11 +37,15 @@
             <MudItem>
                 @if (!string.IsNullOrEmpty(context.ImageInBytes))
                 {
-                    <MudAvatar MudImage="@context.ImageInBytes" Square="true" Style="height: auto; width: auto; max-height: 100%"> </MudAvatar>
+                    <MudAvatar Square="true" Style="height: auto; width: auto; max-height: 100%">
+                        <MudImage Src="@context.ImageInBytes"></MudImage>
+                    </MudAvatar>
                 }
                 else
                 {
-                    <MudAvatar MudImage="@(string.IsNullOrEmpty(@context.ImagePath) ? string.Empty : (Config[ConfigNames.ApiBaseUrl] + @context.ImagePath))" Square="true" Style="height: auto; width: auto; max-height: 100%"> </MudAvatar>
+                    <MudAvatar Square="true" Style="height: auto; width: auto; max-height: 100%">
+                        <MudImage Src="@(string.IsNullOrEmpty(@context.ImagePath) ? string.Empty : (Config[ConfigNames.ApiBaseUrl] + @context.ImagePath))"></MudImage>
+                    </MudAvatar>
                 }
             </MudItem>
             <MudItem>

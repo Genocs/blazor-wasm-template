@@ -18,15 +18,14 @@
         @if (!Context.AddEditModal.IsCreate)
         {
             <MudItem xs="12" md="6">
-                <MudTextField Value="context.Id" ReadOnly DisableUnderLine Label="@L[$"Role Id"]" />
+                <MudTextField Value="context.Id" ReadOnly Label="@L[$"Role Id"]" />
             </MudItem>
         }
         <MudItem xs="12" md="6">
             <MudTextField For="@(() => context.Name)" @bind-Value="context.Name" Label="@L["Role Name"]" />
         </MudItem>
         <MudItem xs="12" md="6">
-            <MudTextField For="@(() => context.Description)" @bind-Value="context.Description"
-                Label="@L["Description"]" />
+            <MudTextField For="@(() => context.Description)" @bind-Value="context.Description" Label="@L["Description"]" />
         </MudItem>
     </EditFormContent>
 

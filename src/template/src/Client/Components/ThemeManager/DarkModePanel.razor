@@ -10,8 +10,8 @@
                 <MudText Class="mt-1">Dark Mode</MudText>
             }
             <MudToggleIconButton @bind-Toggled="_isDarkMode" Icon="@Icons.Material.Filled.WbSunny"
-                                 Color="@Color.Warning" Title="Off" Class="d-flex ml-auto" ToggledIcon="@Icons.Material.Filled.DarkMode"
-                                 ToggledColor="@Color.Surface" ToggledTitle="On" style="left:8px!important" @onclick="@ToggleDarkModeAsync" />
+                                 Color="@Color.Warning" title="@(_isDarkMode ? "Off": "On")" Class="d-flex ml-auto" ToggledIcon="@Icons.Material.Filled.DarkMode"
+                                 ToggledColor="@Color.Surface" style="left:8px!important" @onclick="@ToggleDarkModeAsync" />
         </div>
     </TitleContent>
 </MudExpansionPanel>

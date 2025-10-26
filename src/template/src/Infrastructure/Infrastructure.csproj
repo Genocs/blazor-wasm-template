@@ -9,18 +9,18 @@
 
     <ItemGroup>
         <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
-        <PackageReference Include="MediatR" Version="12.4.1" />
-        <PackageReference Include="MediatR.Courier" Version="6.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="9.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.0" />
-        <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="9.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Localization" Version="9.0.0" />
-        <PackageReference Include="MudBlazor" Version="7.15.0" />
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="NSwag.MSBuild" Version="14.2.0">
+        <PackageReference Include="MediatR" Version="13.1.0" />
+        <PackageReference Include="MediatR.Courier" Version="7.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="9.0.10" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.10" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.10" />
+        <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="9.0.10" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.10" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.10" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="9.0.10" />
+        <PackageReference Include="MudBlazor" Version="8.13.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+        <PackageReference Include="NSwag.MSBuild" Version="14.6.1">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
