@@ -210,6 +210,9 @@ PublishScripts/
 *.nuget.props
 *.nuget.targets
 
+**/nupkgs
+**/nuget.exe
+
 # Microsoft Azure Build Output
 csx/
 *.build.csdef
@@ -455,7 +458,9 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Package build
-nupkgs
+
 
 [Ll]og*.txt
+
+# output folders
+**/out

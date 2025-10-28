@@ -13,22 +13,22 @@ on:
         description: "Package Version"
 
         # Default value if no value is explicitly provided
-        default: "2.3.0"
+        default: "4.0.0"
 
         # Input has to be provided for the workflow to run
         required: true
-
 
 jobs:
   build:
     name: Update NuGet package
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 9.0.x
 
@@ -36,13 +36,16 @@ jobs:
         run: dotnet restore ./src/template
 
       - name: Build
-        run: dotnet build ./src/template -c Debug --no-restore
+        run: dotnet build ./src/template --no-restore
 
       - name: Test
         run: dotnet test ./src/template --no-build --verbosity normal
 
+      - name: Create output directory
+        run: mkdir -p ./out
+
       - name: Pack
-        run: nuget pack ./src/Package.Template.nuspec -NoDefaultExcludes -OutputDirectory ./out -Version ${{ github.event.inputs.version }}
+        run: dotnet pack ./src/Package.Template.csproj -p:PackageVersion=${{ github.event.inputs.version }} --configuration Release --output ./out
 
       - name: Push package to Nuget
         run: dotnet nuget push ./out/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate --no-symbols

@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata minClientVersion="5.10.0">
 		<id>Genocs.BlazorWasm.Template</id>
-		<version>2.3.0</version>
+		<version>3.0.0</version>
 		<title>Genocs - Blazor WebAssembly Template</title>
 		<authors>Nocco Giovanni Emanuele</authors>
 		<owners>[Genocs] Nocco Giovanni Emanuele</owners>
 		<projectUrl>https://genocs-blog.netlify.app/blazor-template/general/overview</projectUrl>
 		<repository type="git" url="https://github.com/Genocs/blazor-wasm-template.git"/>
 		<license type="expression">MIT</license>
-		<icon>.\content\icon.png</icon>
-		<readme>.\content\README_NUGET.md</readme>
+		<icon>icon.png</icon>
+		<readme>README_NUGET.md</readme>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2024</copyright>
-		<description>Clean Architecture Template for .NET9 Blazor WebAssembly built for Genocs WebAPI with MudBlazor Components.</description>
+		<description>Blazor WebAssembly Template with MudBlazor for Genocs Microservice Template.</description>
 		<language>en-US</language>
 		<packageTypes>
 			<packageType name="Template" />
@@ -22,8 +22,7 @@
 	</metadata>
 
 	<files>
-		<file src="..\README.md" target="content" />
-		<file src="..\README_NUGET.md" target="content" />
+		<file src=".\README_NUGET.md" target="content" />
 		<file src="..\icon.png" target="content" />
 		<file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.git\**;**\.github\**;**\*.user;**\.vs\**;**\Images\**;**\Logs\**;**\.terraform\**;**\.terraform.lock.hcl;**\terraform.tfstate;**\.nupkg;**\nupkg;;**\assets\**" />
 	</files>

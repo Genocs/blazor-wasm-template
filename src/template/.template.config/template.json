@@ -7,15 +7,15 @@
     "WebAssembly",
     "WASM"
   ],
-  "tags": {
-    "language": "C#",
-    "type": "project"
-  },
+  "name": "Genocs: Blazor WebAssembly Template",  
   "identity": "Genocs.BlazorWasm.Template",
-  "name": "Genocs: Blazor WebAssembly Template",
-  "description": "Blazor WebAssembly Template for .NET9 built for Genocs WebAPI with MudBlazor Components.",
+  "description": "Genocs Blazor WebAssembly Template with MudBlazor built for Genocs Microservice Template.",
   "groupIdentity": "Genocs.BlazorWasm.Template",
   "shortName": "gnx-blazorwasm",
+  "tags": {
+    "type": "solution",
+    "language": "C#"
+  },
   "sourceName": "Genocs.BlazorWasm.Template", // Will replace the string 'Genocs.BlazorWasm.Template' with the value provided via -n.
   "preferNameDirectory": true,
   "sources": [
