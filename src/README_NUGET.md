@@ -44,14 +44,67 @@
 
 ![.NET template banner](https://raw.githubusercontent.com/Genocs/blazor-wasm-template/main/assets/genocs-library-logo.png ".NET template banner")
 
-## Blazor WebAssembly Template
+# Genocs .NET Blazor WebAssembly Template
 
 The template can be used with the `genocs cli`, `dotnet new` command or with the `Visual Studio 2022`, `Visual Studio Code` IDEs.
 Built with .NET9 and MudBlazor Component Library. Incorporates the most essential packages your projects will ever need. Follows Clean Architecture Principles.
 
-## Goals
+## ✨ Features
 
-The goal of this template is to help developers/companies kickstart their Web Application Development with a pre-built Blazor WebAssembly Template that includes several much needed components and features.
+## 📋 Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Quick Start](#quick-start)
+- [Template Options](#template-options)
+- [Architecture Overview](#architecture-overview)
+- [Development Workflow](#development-workflow)
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+- [Community & Support](#community--support)
+- [Contributing](#contributing)
+- [License](#license)
+
+## 📋 Prerequisites
+
+- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) (latest version)
+- **IDE** (choose one):
+  - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (recommended)
+  - [Visual Studio Code](https://code.visualstudio.com/) with C# extension
+  - [JetBrains Rider](https://www.jetbrains.com/rider/)
+- **Optional for development**:
+  - [Docker Desktop](https://www.docker.com/products/docker-desktop) for containerization
+
+## 🚀 Quick Start
+
+### Install the Template
+
+```bash
+# Install the latest version
+dotnet new install Genocs.BlazorWasm.Template
+
+# Or install a specific version
+dotnet new install Genocs.BlazorWasm.Template::3.0.0
+
+# View all available options
+dotnet new gnx-blazorwasm --help
+
+# Example with custom options
+dotnet new gnx-blazorwasm \
+  --name "CompanyName.ServiceName" \
+```
+
+## 🏗️ Architecture Overview
+
+The template generates a solution with the following structure:
+
+```pl
+src/
+├── Client/ # Acceptance Tests
+├── Host/ # Use cases and application services
+├── Infrastructure/ # Data access and external services
+└── Shared/ # API contracts and events
+```
 
 > Note that this is a frontend/client application only! The backend for this application is available in a seperate repository. 
 > - Find Genocs's .NET Web API template here - [microservice-template](https://github.com/Genocs/microservice-template)
@@ -92,6 +145,46 @@ For more details on getting started, [read the documentation](https://genocs-blo
 
 [Participate in QNA & General Discussions](https://github.com/Genocs/blazor-wasm-template/discussions)
 
+### Miscellaneous
+
+Useful commands:
+
+```bash
+# How to get the list of installed templates
+dotnet new -u
+
+# How to get the list of templates
+dotnet new list
+```
+
+## 💬 Community & Support
+
+### Get Help
+
+- 💬 [Discord Community](https://discord.com/invite/fWwArnkV)
+- 📖 [Documentation](https://genocs-blog.netlify.app/library/)
+- 🐛 [Report Issues](https://github.com/Genocs/clean-architecture-template/issues)
+
+### Stay Connected
+
+- 🐦 [Twitter @genocs](https://twitter.com/genocs)
+- 📺 [YouTube Channel](https://youtube.com/c/genocs)
+- 💼 [LinkedIn](https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/)
+
+### Show Your Support
+
+- ⭐ Star this repository
+- 🔄 Share with your team
+- ☕ [Buy me a coffee](https://www.buymeacoffee.com/genocs)
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/library/)
+
+Please check the [documentation](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2022) for more details.
+
 ## Changelogs
 
 View Complete [Changelogs](https://github.com/Genocs/blazor-wasm-template/blob/main/CHANGELOG.md).
@@ -107,18 +200,20 @@ This project is licensed with the [MIT license](LICENSE).
 - Facebook Page [@genocs](https://facebook.com/Genocs)
 - Youtube Channel [@genocs](https://youtube.com/c/genocs)
 
+
 ## Support
 
 Has this Project helped you learn something New? or Helped you at work?
+
 Here are a few ways by which you can support.
 
 - ⭐ Leave a star!
 - 🥇 Recommend this project to your colleagues.
 - 🦸 Do consider endorsing me on LinkedIn for ASP.NET Core - [Connect via LinkedIn](https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/)
-- ☕ If you want to support this project in the long run, [consider buying me a coffee](https://www.buymeacoffee.com/genocs)!
+- ☕ If you want to support this project in the long run, consider [buying me a coffee](https://www.buymeacoffee.com/genocs)!
 
 
-[![buy-me-a-coffee](https://raw.githubusercontent.com/Genocs/blazor-wasm-template/main/assets/buy-me-a-coffee.png "buy me a coffee")](https://www.buymeacoffee.com/genocs)
+[![buy-me-a-coffee](https://raw.githubusercontent.com/Genocs/microservice-template/main/assets/buy-me-a-coffee.png "buy me a coffee")](https://www.buymeacoffee.com/genocs)
 
 ## Financial Contributors
 
