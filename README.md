@@ -116,16 +116,16 @@ The template generates a solution with the following structure:
 
 ```pl
 src/
-├── Client/ # Acceptance Tests
-├── Host/ # Use cases and application services
-├── Infrastructure/ # Data access and external services
-└── Shared/ # API contracts and events
+├── Client/ # Blazor WebAssembly Client Application
+├── Host/ # ASP.NET Core Host Project
+├── Infrastructure/ # Infrastructure layer (Auth, API Client, Notifications, Preferences, Themes)
+└── Shared/ # Shared contracts, events, and domain models
 ```
 
 
 > Note that this is a frontend/client application only! 
 >
-> The backend for this application is available in a seperate repository. 
+> The backend for this application is available in a separate repository. 
 > - Find Genocs's .NET Web API template here - [microservice-template](https://github.com/Genocs/microservice-template)
 
 ## Getting Started

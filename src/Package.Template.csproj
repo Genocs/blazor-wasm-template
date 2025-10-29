@@ -1,58 +1,67 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- Package Metadata -->
+    <TargetFramework>net9.0</TargetFramework>
+    <PackageType>Template</PackageType>
+    <PackageVersion>3.0.0</PackageVersion>
     <PackageId>Genocs.BlazorWasm.Template</PackageId>
-    <Version>3.0.0</Version>
     <Title>Genocs - Blazor WebAssembly Template</Title>
     <Authors>Nocco Giovanni Emanuele</Authors>
-    <Owners>[Genocs] Nocco Giovanni Emanuele</Owners>
-    <PackageProjectUrl>https://genocs-blog.netlify.app/blazor-template/general/overview</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/Genocs/blazor-wasm-template.git</RepositoryUrl>
+    <Description>A .NET Blazor WebAssembly Template with MudBlazor for Genocs Microservice Template.</Description>
+    <PackageTags>blazor;genocs;solution;csharp;wasm;webassembly;mudblazor</PackageTags>
+    <PackageProjectUrl>https://github.com/Genocs/blazor-wasm-template</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README_NUGET.md</PackageReadmeFile>
-    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
-    <Copyright>2025</Copyright>
-    <Description>Blazor WebAssembly Template with MudBlazor for Genocs Microservice Template.</Description>
-    <PackageTags>blazor genocs solution csharp wasm webassembly mudblazor</PackageTags>
-    <PackageType>Template</PackageType>
+    <RepositoryUrl>https://github.com/Genocs/blazor-wasm-template.git</RepositoryUrl>
+    <RepositoryBranch>main</RepositoryBranch>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Copyright (c) 2025 Genocs</Copyright>
+    <PackageReleaseNotes>Release notes:
+     - Release 3.0.0:
+       - Updated to .NET 9
+       - Improved Docker support
+    </PackageReleaseNotes>
     <Language>en-US</Language>
-    <MinClientVersion>5.10.0</MinClientVersion>
-
-    <!-- Build Settings -->
-    <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeBuildOutput>false</IncludeBuildOutput>
-    <NoBuild>true</NoBuild>
+    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeSource>false</IncludeSource>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <DevelopmentDependency>true</DevelopmentDependency>
     <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- Include icon -->
-    <None Include="icon.png" Pack="true" PackagePath="icon.png" />
-    
-    <!-- Include README -->
+    <!-- Include README and icon at root for NuGet package metadata (PackageIcon and PackageReadmeFile) -->
+    <None Include="..\icon.png" Pack="true" PackagePath="icon.png" />
     <None Include="README_NUGET.md" Pack="true" PackagePath="README_NUGET.md" />
     
-    <!-- Include all template files -->
-    <None Include="template\**\*" Pack="true" PackagePath="content\%(RecursiveDir)%(Filename)%(Extension)" />
+    <!-- Also include README and icon in content folder (matching nuspec file targets) -->
+    <None Include="README_NUGET.md" Pack="true" PackagePath="content\README_NUGET.md" />
+    <None Include="..\icon.png" Pack="true" PackagePath="content\icon.png" />
     
-    <!-- Exclude files that shouldn't be in the package -->
-    <None Remove="template\**\bin\**" />
-    <None Remove="template\**\obj\**" />
-    <None Remove="template\**\.git\**" />
-    <None Remove="template\**\*.user" />
-    <None Remove="template\**\.vs\**" />
-    <None Remove="template\**\Images\**" />
-    <None Remove="template\**\Logs\**" />
-    <None Remove="template\**\.terraform\**" />
-    <None Remove="template\**\.terraform.lock.hcl" />
-    <None Remove="template\**\terraform.tfstate" />
-    <None Remove="template\**\*.nupkg" />
-    <None Remove="template\**\nupkg" />
-    <None Remove="template\**\assets\**" />
+    <!-- Include all template files in content folder with proper exclusions (matching nuspec) -->
+    <Content Include="template\**\*" 
+             Exclude="template\**\bin\**;
+                      template\**\obj\**;
+                      template\**\.git\**;
+                      template\**\.github\**;
+                      template\**\*.user;
+                      template\**\.vs\**;
+                      template\**\.vscode\**;
+                      template\**\Images\**;
+                      template\**\Logs\**;
+                      template\**\.terraform\**;
+                      template\**\.terraform.lock.hcl;
+                      template\**\terraform.tfstate;
+                      template\**\*.nupkg;
+                      template\**\nupkg;
+                      template\**\assets\**;
+                      template\**\*.log;
+                      template\**\*.exe" 
+             PackagePath="content\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
 </Project>
-
