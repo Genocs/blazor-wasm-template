@@ -4,6 +4,9 @@
         <TargetFramework>net9.0</TargetFramework>
         <RootNamespace>Genocs.BlazorWasm.Template.Host</RootNamespace>
         <AssemblyName>Genocs.BlazorWasm.Template.Host</AssemblyName>
+        <UserSecretsId>Genocs</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileContext>..\..</DockerfileContext>
         <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
     </PropertyGroup>
 

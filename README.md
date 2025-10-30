@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![License][license-shield]][license-url]
 [![Build][build-shield]][build-url]
 [![Packages][package-shield]][package-url]
@@ -40,7 +41,6 @@
 [twitterx-shield]: https://img.shields.io/twitter/url/https/twitter.com/genocs.svg?style=social
 [twitterx-url]: https://twitter.com/genocs
 
-
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/Genocs/blazor-wasm-template">
@@ -62,8 +62,10 @@
 </p>
 
 # Genocs .NET Blazor WebAssembly Template
+
 The template can be used with the `genocs cli`, `dotnet new` command or with the `Visual Studio 2022`, `Visual Studio Code` IDEs.
 Built with .NET9 and MudBlazor Component Library. Incorporates the most essential packages your projects will ever need. Follows Clean Architecture Principles.
+
 ## ✨ Features
 
 ## 📋 Table of Contents
@@ -122,10 +124,10 @@ src/
 └── Shared/ # Shared contracts, events, and domain models
 ```
 
-
-> Note that this is a frontend/client application only! 
+> Note that this is a frontend/client application only!
 >
-> The backend for this application is available in a separate repository. 
+> The backend for this application is available in a separate repository.
+>
 > - Find Genocs's .NET Web API template here - [microservice-template](https://github.com/Genocs/microservice-template)
 
 ## Getting Started
@@ -146,8 +148,7 @@ This would install the `Genocs Blazor WebAssembly Template` globally on your mac
 
 Do note that, at the time of writing this documentation, the latest available version is **3.0.0** which is also one of the first stable release version of the package. It is highly likely that there is already a newer version available when you are reading this.
 
-> *To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.BlazorWasm.Template/)*
->
+> _To get the latest version of the package, visit [nuget.org](https://www.nuget.org/packages/Genocs.BlazorWasm.Template/)_
 
 **Genocs.BlazorWasm.Template::3.0.0 is compatible only with Genocs.Microservice.Template::3.0.0 and above.**
 
@@ -158,7 +159,6 @@ dotnet new --install Genocs.Microservice.Template::3.0.0
 ```
 
 For more details on getting started, [read the documentation](https://genocs-blog.netlify.app/blazor-wasm-template/general/overview/)
-
 
 ## Links & Documentations
 
@@ -208,6 +208,16 @@ dotnet new -u
 dotnet new list
 ```
 
+### How to build Docker image
+
+``` bash
+# Build webapi
+docker build -t genocs/genocs.bazorwasm.template-portal:3.0.0 -t genocs/genocs.bazorwasm.template-portal:latest -f ./src/Host/Dockerfile .
+
+# Push on Dockerhub
+docker push genocs/genocs.bazorwasm.template-portal:3.0.0
+docker push genocs/genocs.bazorwasm.template-portal:latest
+```
 ## 💬 Community & Support
 
 ### Get Help
@@ -244,13 +254,11 @@ View Complete [Changelogs](https://github.com/Genocs/blazor-wasm-template/blob/m
 
 This project is licensed with the [MIT license](LICENSE).
 
-
 ## Community
 
 - Discord [@genocs](https://discord.com/invite/fWwArnkV)
 - Facebook Page [@genocs](https://facebook.com/Genocs)
 - Youtube Channel [@genocs](https://youtube.com/c/genocs)
-
 
 ## Support
 
@@ -262,7 +270,6 @@ Here are a few ways by which you can support.
 - 🥇 Recommend this project to your colleagues.
 - 🦸 Do consider endorsing me on LinkedIn for ASP.NET Core - [Connect via LinkedIn](https://www.linkedin.com/in/giovanni-emanuele-nocco-b31a5169/)
 - ☕ If you want to support this project in the long run, consider [buying me a coffee](https://www.buymeacoffee.com/genocs)!
-
 
 [![buy-me-a-coffee](https://raw.githubusercontent.com/Genocs/microservice-template/main/assets/buy-me-a-coffee.png "buy me a coffee")](https://www.buymeacoffee.com/genocs)
 

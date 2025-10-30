@@ -20,7 +20,11 @@ else
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+var configuredHttpsPorts = builder.Configuration["ASPNETCORE_HTTPS_PORTS"];
+if (!string.IsNullOrEmpty(configuredHttpsPorts))
+{
+    app.UseHttpsRedirection();
+}
 
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();

@@ -2,8 +2,6 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build-env
 WORKDIR /src
@@ -30,4 +28,9 @@ RUN dotnet publish "Host.csproj" -c Debug -o /app/publish /p:UseAppHost=false
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+# Explicitly expose the default HTTP port for .NET 9 containers
+EXPOSE 8080
+ENV ASPNETCORE_HTTP_PORTS=8080
+
 ENTRYPOINT ["dotnet", "Genocs.BlazorWasm.Template.Host.dll"]
